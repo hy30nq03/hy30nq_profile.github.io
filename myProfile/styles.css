@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #2d2d2d;
+  background: linear-gradient(135deg, rgb(139, 0, 41) 0%, rgba(45,45,45,1) 33%), linear-gradient(135deg, rgb(139, 0, 41) 0%, #2d2d2d 33%), linear-gradient(135deg, #dd0000 66%, #2d2d2d 100%);  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #333;
+  border-radius: 15px;
+  padding: 2rem 1.5rem 1rem 1.5rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: #6e6e6e;
+  width: 80%;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+/*여기 부분 수정 */
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-icons {
+  display: flex;
+  margin: 0 2rem 0 2rem;
+}
+
+.nav-icons span {
+  cursor: pointer;
+}
+
+.content {
+  flex: 1;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.content p {
+  line-height: 1.5rem;
+}
+
+.about {
+  text-align: center;
+  margin: 2rem;
+  margin-top: 0;
+  margin-left: 3rem;
+}
+
+.about h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about ul li {
+  margin-bottom: 0.5rem;
+}
+
+.about ul li a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.about ul li a:hover {
+  text-decoration: none;
+  color: #6e6e6e;
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: block;
+    justify-content: initial;
+  }
+}
