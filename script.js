@@ -1,18 +1,21 @@
-// 문서가 완전히 로드되면 실행
-$(document).ready(function() {
-    // 로딩 화면 처리 수정
+// 페이지가 이미 로드되었는지 확인
+if (document.readyState === 'complete') {
+    $('#preloader').fadeOut('slow');
+} else {
     $(window).on('load', function() {
         setTimeout(function() {
             $('#preloader').fadeOut('slow');
         }, 500);
     });
+}
 
+$(document).ready(function() {
     // AOS 애니메이션 설정 수정
     AOS.init({
         duration: 400,
-        once: false,  // 반복 애니메이션 허용
-        offset: 10,   // 오프셋 감소
-        delay: 0,     // 딜레이 제거
+        once: false,
+        offset: 10,
+        delay: 0,
         disable: function() {
             return $('.card-inner').hasClass('flipped');
         }
