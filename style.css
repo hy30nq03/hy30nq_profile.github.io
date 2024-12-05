@@ -1,0 +1,375 @@
+/* 로딩 화면 스타일 */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: 99999;
+}
+
+.spinner {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80px;
+  height: 80px;
+  margin: -40px 0 0 -40px;
+  border: 3px solid #e74c3c;
+  border-radius: 50%;
+  border-top: 3px solid #fff;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 기본 스타일 초적화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: #fff;
+  overflow-x: hidden;
+  line-height: 1.6;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* 파티클 JS 캔버스 */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(45deg, #000000, #1a1a1a);
+}
+
+/* 메인 컨테이너 */
+.container {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 카드 스타일 최적화 */
+.card {
+  width: 800px;
+  background: rgba(17, 17, 17, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(139, 31, 65, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(139, 31, 65, 0.2);
+  border-radius: 25px;
+  margin: 20px;
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  background: linear-gradient(
+    135deg,
+    rgba(17, 17, 17, 0.95) 0%,
+    rgba(17, 17, 17, 0.9) 100%
+  );
+  border-radius: 25px;
+}
+
+.card-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  padding: 40px;
+  overflow-y: auto;
+  background: rgba(17, 17, 17, 0.95);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+/* 프로필 이미지 */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #e74c3c;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 이름과 별칭 */
+.name {
+  font-size: 48px;
+  font-weight: 700;
+  color: #e74c3c;
+}
+
+.alias {
+  font-size: 24px;
+  font-weight: 300;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+/* 소셜 아이콘 */
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #e74c3c;
+}
+
+/* 카드 뒤집기 버튼 */
+.flip-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.flip-button:hover {
+  color: #e74c3c;
+}
+
+/* 닫기 버튼 */
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 10px;
+}
+
+.close-button:hover {
+  color: #e74c3c;
+}
+
+/* 콘텐츠 섹션 최적화 */
+.content-section {
+  margin-bottom: 20px;
+  padding-right: 10px;
+  border-radius: 15px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.content-section h2 {
+  font-size: 24px;
+  color: #8B1F41;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding: 8px 15px;
+  background: rgba(139, 31, 65, 0.1);
+  display: inline-block;
+}
+
+.content-section ul {
+  list-style: none;
+  padding: 0 15px;
+}
+
+.content-section ul li {
+  font-size: 16px;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.5;
+  border-radius: 8px;
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  transition: background 0.3s ease;
+}
+
+.content-section ul li::before {
+  content: '•';
+  color: #e74c3c;
+  position: absolute;
+  left: 0;
+}
+
+.content-section ul li strong {
+  color: #e74c3c;
+}
+
+.content-section ul li a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(231, 76, 60, 0.3);
+  transition: all 0.2s ease;
+  padding-bottom: 1px;
+  border-radius: 4px;
+  padding: 2px 5px;
+  margin: -2px -5px;
+}
+
+.content-section ul li a:hover {
+  color: #e74c3c;
+  border-bottom-color: #e74c3c;
+  background: rgba(231, 76, 60, 0.1);
+}
+
+/* 상단으로 이동 버튼 */
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #e74c3c;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#back-to-top:hover {
+  background: #fff;
+  color: #e74c3c;
+}
+
+/* 스크롤바 스타일 개선 */
+.card-back::-webkit-scrollbar {
+  width: 8px;
+  display: block;
+  border-radius: 4px;
+}
+
+.card-back::-webkit-scrollbar-thumb {
+  background-color: #8B1F41;
+  border-radius: 4px;
+}
+
+.card-back::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+/* 반응형 디자인 개선 */
+@media screen and (max-width: 768px) {
+  .card {
+      width: 95%;
+      height: 85vh;
+      margin: 10px;
+      border-radius: 20px;
+  }
+  
+  .card-back {
+      padding: 20px 15px;
+  }
+  
+  .content-section h2 {
+      font-size: 20px;
+      border-radius: 6px;
+  }
+  
+  .content-section ul li {
+      font-size: 14px;
+      border-radius: 6px;
+  }
+}
+
+/* 애니메이션 성능 최적화 */
+.card, .card-inner, .card-front, .card-back {
+  will-change: transform;
+}
+
+/* 링크 스타일 심플하게 수정 */
+.content-section a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(231, 76, 60, 0.3);
+    transition: all 0.2s ease;
+    padding-bottom: 1px;
+    border-radius: 4px;
+    padding: 2px 5px;
+    margin: -2px -5px;
+}
+
+.content-section a:hover {
+    color: #e74c3c;
+    border-bottom-color: #e74c3c;
+    background: rgba(231, 76, 60, 0.1);
+}
+
+/* GitHub 링크 스타일 */
+.content-section a[href*="github.com"] {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 112, 209, 0.3);
+}
+
+.content-section a[href*="github.com"]:hover {
+    color: #0070d1;
+    border-bottom-color: #0070d1;
+    background: rgba(0, 112, 209, 0.1);
+}
