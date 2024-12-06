@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-KGTQCTKV');
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <title>hy30nq's site</title>
     <!-- Meta tags for responsiveness and SEO -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="Welcome to hy30nq's site.">
-    
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -25,184 +32,162 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    
     <!-- Style sheet -->
     <link rel="stylesheet" href="./style.css">
-    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    
     <!-- Font Awesome icons - 최신 버전 사용 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
     <!-- AOS animation library - 최신 버전 사용 -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-<body>
+  </head>
+  <body>
     <!-- Loading screen -->
     <div id="preloader">
-        <div class="matrix-loader">
-            <div class="loader-text">SYSTEM INITIALIZING...</div>
-        </div>
-        <div class="progress-bar">
-            <div class="progress"></div>
-        </div>
-        <div id="binary-container"></div>
+      <div class="matrix-loader">
+        <div class="loader-text">SYSTEM INITIALIZING...</div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <div id="binary-container"></div>
     </div>
-
     <!-- Particles.js container -->
     <div id="particles-js"></div>
-
     <!-- Three.js 캔버스 -->
     <canvas id="earth-background"></canvas>
-
     <!-- Main container -->
     <div class="container">
-        <!-- Card -->
-        <div class="card" data-tilt>
-            <div class="card-inner">
-                <div class="card-front">
-                    <!-- Profile image -->
-                    <div class="profile-img" data-aos="fade-down">
-                        <img src="profile.gif" alt="Profile Image">
-                    </div>
-                    <!-- Name and alias -->
-                    <h1 class="name" data-aos="fade-up">hy30nq</h1>
-                    <p class="alias" data-aos="fade-up" data-aos-delay="200">Student | Dev, Web Hacking, Reversing</p>
-                    <!-- Social icons -->
-                    <div class="social-icons" data-aos="fade-up" data-aos-delay="400">
-                        <a href="https://hyeonql.tistory.com/" target="_blank"><i class="fas fa-blog"></i></a>
-                        <a href="https://www.instagram.com/hy30nq/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://github.com/hy30nq" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                    <!-- Flip button -->
-                    <div class="flip-button" data-aos="fade-up" data-aos-delay="600">
-                        <i class="fas fa-arrow-circle-right"></i>
-                    </div>
-                </div>
-                <div class="card-back">
-                    <!-- Close button -->
-                    <div class="close-button">
-                        <i class="fas fa-times-circle"></i>
-                    </div>
-                    
-                    <!-- About section -->
-                    <div class="content-section">
-                        <h2>About</h2>
-                        <ul>
-                            <li><strong>Name: </strong>hy30nq</li>
-                            <li><strong>Blog: </strong> <a href="https://hyeonql.tistory.com/" target="_blank">hyeonql.tistory.com</a></li>
-                            <li><strong>Instagram: </strong> <a href="https://www.instagram.com/hy30nq/" target="_blank">@hy30nq</a></li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Experiences -->
-                    <div class="content-section">
-                        <h2>Experiences</h2>
-                        <ul>
-                            <li>kakao, goorm - 구름톤 유니브 3기 (2024.8 ~ NOW)</li>
-                            <li>과학기술정보통신부, 한국인터넷진흥원(KISA) - 2024 블록체인 누리단 (2024.07.31 ~ NOW)</li>
-                            <li>KnockOn - KnockOn Q&A 멘토 (2024.06.25 ~ NOW)</li>
-                            <li>한국정보보호산업협회(KISIA) - KISIA AI 보안기술개발 네트워크반 (2024.07.08 ~ 2024.11.28)</li>
-                            <li>개인정보보호위원회, 한국인터넷진흥원(KISA) - 개인정보 불법유통 대응 대학생 모니터링단 (2024.07.22 ~ 2024.12.03)</li>
-                            <li>중부정보보호지원센터 - 웹취약점 점검 실습 (2024.10.08)</li>
-                            <li>한국정보보호산업협회 한국정보보호교육원 - 융합보안 인력양성 교육 (블록체인 (기초)) (2024.09.04 ~ 2024.09.06)</li>
-                            <li>POC Security - 29회 하계 해킹캠프 (2024.08.17 ~ 2024.08.18)</li>
-                            <li>코멘토 로부트캠프 - 현업 보안 담당자와 함께 정보보안, 개인정보 보호 실무체험하기 (2024.05.09 ~ 2024.06.30)</li>
-                            <li>KnockOn - KnockOn elite whitehacker bootcamp 1st TOP7 (2024.02.17 ~ 2024.05.30)</li>
-                            <li><a href="https://www.msit.go.kr/bbs/view.do?sCode=user&mId=113&mPid=238&bbsSeqNo=94&nttSeqNo=3184227" target="_blank">한국정보기술연구원(KITRI) - 차세대 보안리더 양 프로그램 화이트햇 스쿨 1st TOP20 (2023.09.01 ~ 2024.03.22)</a></li>
-                            <li>국가과학기술인력개발원(KIRD) - 사이버보안 하계 직무연계 교육과정(정보보호특성화대학) (2023.08.16 ~ 2023.08.18)</li>
-                            <li>한국정보보호교육센터(KISEC) - Start-Up K-Shield Jr. (2023.07.01~2023.07.31)</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Awards -->
-                    <div class="content-section">
-                        <h2>Awards</h2>
-                        <ul>
-                            <li><a href="https://www.boannews.com/media/view.asp?idx=132213&direct=mobile" target="_blank">2024 제2회 KISIA 정보보호 개발자 해커톤 최우수상 (과학기술정보통신부 장관상) - 2024.08.21</a></li>
-                            <li>29회 하계 해킹캠프 CTF 우승 (Team 고민중독) - 2024.08.18</li>
-                            <li>KnockOn elite whitehacker bootcamp 1st TOP7 - 2024.06.02</li>
-                            <li><a href="https://www.msit.go.kr/bbs/view.do?sCode=user&mId=113&mPid=238&bbsSeqNo=94&nttSeqNo=3184227" target="_blank">화이트햇 스쿨 1기 TOP 20 (과학기술정보통신부 장관 인증서) - 2024.03.22</a></li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Projects -->
-                    <div class="content-section">
-                        <h2>Projects</h2>
-                        <ul>
-                            <li>인공지능사이버보안학과 학술제 - Exploring WordPress Plugin Vulnerabilities Using a Vulnerability Detection Program (2024)</li>
-                            <li>한국정보보호산업협회(KISIA) - <a href="https://github.com/racheliee/kisia-project" target="_blank">AI powered malicious URL checker</a> (2024)</li>
-                            <li>고용노동부(일자리경험) - Food AI 개인화 추천 솔루션 고도화 (2024)</li>
-                            <li>KnockOn bootcamp - <a href="https://github.com/hy30nq/myWebsiteWithKnock" target="_blank">CRUD, File Upload, paging, user account 기능 구현</a> (2024)</li>
-                            <li>화이트햇 스쿨 - 윈도우 소프트웨어 버그헌팅 (2023~2024)</li>
-                            <li>파이썬프로그래밍(학교 수업) - 파이썬에서 api를 활용한 영화 추천 프로그램 (2023)</li>
-                        </ul>
-                    </div>
-
-                    <!-- CVE section -->
-                    <div class="content-section">
-                        <h2>CVE</h2>
-                        <ul>
-                            <li><strong>CVE-2024-11950</strong> - <a href="https://www.zerodayinitiative.com/advisories/ZDI-24-1640/" target="_blank">XnSoft XnView Classic RWZ File Parsing Integer Underflow Remote Code Execution Vulnerability (ZDI-24-1640)</a></li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Certificates -->
-                    <div class="content-section">
-                        <h2>Certificates</h2>
-                        <ul>
-                            <li>정보처리기능사 (2024)</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Languages -->
-                    <div class="content-section">
-                        <h2>Languages</h2>
-                        <p>Chinese</p>
-                        <ul>
-                            <li>HSK 四级</li>
-                            <li>HSKK 初级</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Education -->
-                    <div class="content-section">
-                        <h2>Education</h2>
-                        <p>2022</p>
-                        <ul>
-                            <li><a href="https://drive.google.com/file/d/11CysMOz4Jr1vUBlAqe-5F5Wn8asIySix/view?usp=sharing" target="_blank">고려대학교 서울캠퍼스 중어중문학과 합격</a></li>
-                        </ul>
-                        <p>2023</p>
-                        <ul>
-                            <li>고려대학교 세종캠퍼스 인공지능사이버보안학과 23학번</li>
-                        </ul>
-                    </div>
-                </div>
+      <!-- Card -->
+      <div class="card" data-tilt>
+        <div class="card-inner">
+          <div class="card-front">
+            <!-- Profile image -->
+            <div class="profile-img" data-aos="fade-down">
+              <img src="profile.gif" alt="Profile Image">
             </div>
+            <!-- Name and alias -->
+            <h1 class="name" data-aos="fade-up">hy30nq</h1>
+            <p class="alias" data-aos="fade-up" data-aos-delay="200">Student | Dev, Web Hacking, Reversing</p>
+            <!-- Social icons -->
+            <div class="social-icons" data-aos="fade-up" data-aos-delay="400">
+              <a href="https://hyeonql.tistory.com/" target="_blank"><i class="fas fa-blog"></i></a>
+              <a href="https://www.instagram.com/hy30nq/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://github.com/hy30nq" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <!-- Flip button -->
+            <div class="flip-button" data-aos="fade-up" data-aos-delay="600">
+              <i class="fas fa-arrow-circle-right"></i>
+            </div>
+          </div>
+          <div class="card-back">
+            <!-- Close button -->
+            <div class="close-button">
+              <i class="fas fa-times-circle"></i>
+            </div>
+            <!-- About section -->
+            <div class="content-section">
+              <h2>About</h2>
+              <ul>
+                <li><strong>Name: </strong>hy30nq</li>
+                <li><strong>Blog: </strong> <a href="https://hyeonql.tistory.com/" target="_blank">hyeonql.tistory.com</a></li>
+                <li><strong>Instagram: </strong> <a href="https://www.instagram.com/hy30nq/" target="_blank">@hy30nq</a></li>
+              </ul>
+            </div>
+            <!-- Experiences -->
+            <div class="content-section">
+              <h2>Experiences</h2>
+              <ul>
+                <li>kakao, goorm - 구름톤 유니브 3기 (2024.8 ~ NOW)</li>
+                <li>과학기술정보통신부, 한국인터넷진흥원(KISA) - 2024 블록체인 누리단 (2024.07.31 ~ NOW)</li>
+                <li>KnockOn - KnockOn Q&A 멘토 (2024.06.25 ~ NOW)</li>
+                <li>한국정보보호산업협회(KISIA) - KISIA AI 보안기술개발 네트워크반 (2024.07.08 ~ 2024.11.28)</li>
+                <li>개인정보보호위원회, 한국인터넷진흥원(KISA) - 개인정보 불법유통 대응 대학생 모니터링단 (2024.07.22 ~ 2024.12.03)</li>
+                <li>중부정보보호지원센터 - 웹취약점 점검 실습 (2024.10.08)</li>
+                <li>한국정보보호산업협회 한국정보보호교육원 - 융합보안 인력양성 교육 (블록체인 (기초)) (2024.09.04 ~ 2024.09.06)</li>
+                <li>POC Security - 29회 하계 해킹캠프 (2024.08.17 ~ 2024.08.18)</li>
+                <li>코멘토 로부트캠프 - 현업 보안 담당자와 함께 정보보안, 개인정보 보호 실무체험하기 (2024.05.09 ~ 2024.06.30)</li>
+                <li>KnockOn - KnockOn elite whitehacker bootcamp 1st TOP7 (2024.02.17 ~ 2024.05.30)</li>
+                <li><a href="https://www.msit.go.kr/bbs/view.do?sCode=user&mId=113&mPid=238&bbsSeqNo=94&nttSeqNo=3184227" target="_blank">한국정보기술연구원(KITRI) - 차세대 보안리더 양 프로그램 화이트햇 스쿨 1st TOP20 (2023.09.01 ~ 2024.03.22)</a></li>
+                <li>국가과학기술인력개발원(KIRD) - 사이버보안 하계 직무연계 교육과정(정보보호특성화대학) (2023.08.16 ~ 2023.08.18)</li>
+                <li>한국정보보호교육센터(KISEC) - Start-Up K-Shield Jr. (2023.07.01~2023.07.31)</li>
+              </ul>
+            </div>
+            <!-- Awards -->
+            <div class="content-section">
+              <h2>Awards</h2>
+              <ul>
+                <li><a href="https://www.boannews.com/media/view.asp?idx=132213&direct=mobile" target="_blank">2024 제2회 KISIA 정보보호 개발자 해커톤 최우수상 (과학기술정보통신부 장관상) - 2024.08.21</a></li>
+                <li>29회 하계 해킹캠프 CTF 우승 (Team 고민중독) - 2024.08.18</li>
+                <li>KnockOn elite whitehacker bootcamp 1st TOP7 - 2024.06.02</li>
+                <li><a href="https://www.msit.go.kr/bbs/view.do?sCode=user&mId=113&mPid=238&bbsSeqNo=94&nttSeqNo=3184227" target="_blank">화이트햇 스쿨 1기 TOP 20 (과학기술정보통신부 장관 인증서) - 2024.03.22</a></li>
+              </ul>
+            </div>
+            <!-- Projects -->
+            <div class="content-section">
+              <h2>Projects</h2>
+              <ul>
+                <li>인공지능사이버보안학과 학술제 - Exploring WordPress Plugin Vulnerabilities Using a Vulnerability Detection Program (2024)</li>
+                <li>한국정보보호산업협회(KISIA) - <a href="https://github.com/racheliee/kisia-project" target="_blank">AI powered malicious URL checker</a> (2024)</li>
+                <li>고용노동부(일자리경험) - Food AI 개인화 추천 솔루션 고도화 (2024)</li>
+                <li>KnockOn bootcamp - <a href="https://github.com/hy30nq/myWebsiteWithKnock" target="_blank">CRUD, File Upload, paging, user account 기능 구현</a> (2024)</li>
+                <li>화이트햇 스쿨 - 윈도우 소프트웨어 버그헌팅 (2023~2024)</li>
+                <li>파이썬프로그래밍(학교 수업) - 파이썬에서 api를 활용한 영화 추천 프로그램 (2023)</li>
+              </ul>
+            </div>
+            <!-- CVE section -->
+            <div class="content-section">
+              <h2>CVE</h2>
+              <ul>
+                <li><strong>CVE-2024-11950</strong> - <a href="https://www.zerodayinitiative.com/advisories/ZDI-24-1640/" target="_blank">XnSoft XnView Classic RWZ File Parsing Integer Underflow Remote Code Execution Vulnerability (ZDI-24-1640)</a></li>
+              </ul>
+            </div>
+            <!-- Certificates -->
+            <div class="content-section">
+              <h2>Certificates</h2>
+              <ul>
+                <li>정보처리기능사 (2024)</li>
+              </ul>
+            </div>
+            <!-- Languages -->
+            <div class="content-section">
+              <h2>Languages</h2>
+              <p>Chinese</p>
+              <ul>
+                <li>HSK 四级</li>
+                <li>HSKK 初级</li>
+              </ul>
+            </div>
+            <!-- Education -->
+            <div class="content-section">
+              <h2>Education</h2>
+              <p>2022</p>
+              <ul>
+                <li><a href="https://drive.google.com/file/d/11CysMOz4Jr1vUBlAqe-5F5Wn8asIySix/view?usp=sharing" target="_blank">고려대학교 서울캠퍼스 중어중문학과 합격</a></li>
+              </ul>
+              <p>2023</p>
+              <ul>
+                <li>고려대학교 세종캠퍼스 인공지능사이버보안학과 23학번</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-
     <!-- Back to top button -->
     <a href="#" id="back-to-top"><i class="fas fa-chevron-up"></i></a>
-
     <!-- Script files -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    
     <!-- Particles.js -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    
     <!-- Tilt.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-    
     <!-- Three.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
     <!-- Custom scripts -->
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
