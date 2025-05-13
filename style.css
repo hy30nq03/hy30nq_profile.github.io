@@ -1348,6 +1348,232 @@ body:not(.dark-mode) .scroll-indicator {
   overflow: hidden;
 }
 
+/* 새로운 About 레이아웃 */
+.about-top-row, .about-bottom-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-top-row {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .about-top-row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.about-item {
+  padding: 20px 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode .about-item {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+.about-item:hover {
+  background: rgba(var(--primary-color-rgb), 0.05);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+.about-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: var(--primary-color);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.about-item:hover::before {
+  opacity: 1;
+}
+
+.about-affiliations {
+  padding: 20px 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about-affiliations strong {
+  margin-bottom: 0;
+  display: inline-flex;
+  color: var(--primary-color);
+  font-weight: 600;
+  position: relative;
+  padding-left: 28px;
+  margin-right: 10px;
+}
+
+.about-affiliations strong::before {
+  content: "\ec0b"; /* bx-network-chart */
+  font-family: "boxicons";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+#about strong {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  min-width: 80px;
+}
+
+#about strong::before {
+  content: "";
+  font-family: "boxicons";
+  margin-right: 8px;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.about-item:nth-child(1) strong::before {
+  content: "\eb32"; /* bx-user */
+}
+
+.about-item:nth-child(2) strong::before {
+  content: "\eb2a"; /* bx-globe */
+}
+
+.about-item:nth-child(3) strong::before {
+  content: "\ec0f"; /* bx-at */
+}
+
+.affiliation-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  background: rgba(var(--primary-color-rgb), 0.1);
+  color: var(--primary-color);
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+.affiliation-badge:hover {
+  background: rgba(var(--primary-color-rgb), 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(var(--primary-color-rgb), 0.15);
+}
+
+.affiliation-badge a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.affiliation-badge a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.affiliation-badge a:hover {
+  color: var(--primary-color);
+}
+
+.affiliation-badge a:hover::after {
+  width: 100%;
+}
+
+#about a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-bottom: 2px;
+  font-weight: 500;
+}
+
+#about a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+#about a:hover {
+  color: var(--primary-color);
+}
+
+#about a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .about-affiliations {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .affiliation-badge {
+    padding: 6px 12px;
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .about-item {
+    padding: 15px 20px;
+    min-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .dark-mode .about-item {
+    border-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .about-affiliations {
+    padding: 15px 20px;
+  }
+  
+  .affiliations-badges {
+    gap: 8px;
+  }
+  
+  .affiliation-badge {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
+
+/* 기존 About 스타일 제거 */
 #about ul {
   list-style: none;
   margin: 0;
@@ -1391,81 +1617,9 @@ body:not(.dark-mode) .scroll-indicator {
   opacity: 1;
 }
 
-#about strong {
-  color: var(--primary-color);
-  font-weight: 600;
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-  min-width: 80px;
-}
-
-#about strong::before {
-  content: "";
-  font-family: "boxicons";
-  margin-right: 8px;
-  font-size: 18px;
-  opacity: 0.8;
-}
-
-#about li:nth-child(1) strong::before {
-  content: "\eb32"; /* bx-user */
-}
-
-#about li:nth-child(2) strong::before {
-  content: "\eba0"; /* bx-pen */
-}
-
-#about li:nth-child(3) strong::before {
-  content: "\ec0f"; /* bx-at */
-}
-
-#about a {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: all 0.3s ease;
-  position: relative;
-  padding-bottom: 2px;
-  font-weight: 500;
-}
-
-#about a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background: var(--primary-color);
-  transition: width 0.3s ease;
-}
-
-#about a:hover {
-  color: var(--primary-color);
-}
-
-#about a:hover::after {
-  width: 100%;
-}
-
-/* 반응형 디자인 */
-@media (max-width: 768px) {
-  #about ul {
-    grid-template-columns: 1fr;
-  }
-
-  #about li {
-    border-right: none;
-  }
-}
-
-/* 다크 모드 조정 */
-.dark-mode #about li {
-  border-color: rgba(255, 255, 255, 0.05);
-}
-
-.dark-mode #about li:hover {
-  background: rgba(var(--primary-color-rgb), 0.1);
+.affiliation-list-item {
+  flex-direction: column;
+  align-items: flex-start !important;
 }
 
 /* 반응형 디자인 개선 */
@@ -2376,50 +2530,114 @@ a:focus-visible {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .cve-card {
-    flex-direction: column;
-    padding: 15px;
-  }
-
-  .cve-id {
-    margin-right: 0;
-    margin-bottom: 15px;
-    align-self: flex-start;
-  }
-
-  .cve-details h3 {
-    font-size: 16px;
-  }
-
-  .cve-card::before {
-    border-width: 0 40px 40px 0;
-  }
+/* 장학금 섹션 스타일 */
+.scholarships-container {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(var(--primary-color-rgb), 0.1);
 }
 
-@media screen and (max-width: 576px) {
-  .cve-card {
-    padding: 12px;
-  }
+.section-subtitle {
+  font-size: 22px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-  .cve-id {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
+.section-subtitle i {
+  font-size: 24px;
+  color: var(--primary-color);
+}
 
-  .cve-details h3 {
-    font-size: 15px;
-  }
+.scholarships-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
 
-  .cve-details p {
-    font-size: 13px;
-  }
+.scholarship-item {
+  background: var(--section-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  border: var(--card-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
 
-  .cve-link {
-    font-size: 13px;
-  }
+.scholarship-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 4px;
+  background: var(--gradient-tertiary);
+  opacity: 0.7;
+}
 
-  .cve-card::before {
-    border-width: 0 30px 30px 0;
+.scholarship-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.scholarship-icon {
+  font-size: 26px;
+  color: var(--tertiary-color);
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+}
+
+.scholarship-content {
+  flex: 1;
+}
+
+.scholarship-content h4 {
+  font-size: 17px;
+  margin-bottom: 10px;
+  color: var(--tertiary-color);
+  font-weight: 600;
+}
+
+.scholarship-terms {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scholarship-terms li {
+  margin-bottom: 5px;
+  color: var(--text-color-secondary);
+  position: relative;
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+.scholarship-terms li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--tertiary-color);
+}
+
+@media (max-width: 768px) {
+  .scholarships-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .scholarship-item {
+    padding: 15px;
+  }
+  
+  .section-subtitle {
+    font-size: 20px;
   }
 }
