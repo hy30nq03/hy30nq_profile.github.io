@@ -6,10 +6,10 @@ const state = {
   isAuthenticated: false
 };
 
-// SHA512 해시된 비밀번호 (실제 비밀번호는 "이현규")
+// SHA512 해시된 비밀번호 (실제 비밀번호는 "[**secret**]")
 const CORRECT_PASSWORD_HASH = '918e96c0a2d70d2881a8e59e7dd30ab7a5c264f21e16e02c92a15e7481ebc654d08130ab1aba6425355b143ddd93202136f0c533796754b59588c00092e8a4d7';
 
-// 대외활동 비밀번호 해시 (실제 비밀번호는 "030430")
+// 대외활동 비밀번호 해시 (실제 비밀번호는 "[**secret**]")
 const ACTIVITIES_PASSWORD_HASH = '89f6123f4e7479ea7a3c882cddab0d75dff7326d7af91b0830ce12c5c4bc9c3b10ebb58b537be3a0266b6712f99e970e4d786bf5f69289e49ac9eb5be6d83790';
 
 const SECTION_CONFIG = {
