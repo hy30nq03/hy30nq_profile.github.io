@@ -10,7 +10,7 @@ const state = {
 const CORRECT_PASSWORD_HASH = '918e96c0a2d70d2881a8e59e7dd30ab7a5c264f21e16e02c92a15e7481ebc654d08130ab1aba6425355b143ddd93202136f0c533796754b59588c00092e8a4d7';
 
 // 대외활동 비밀번호 해시 (실제 비밀번호는 "[**secret**]")
-const ACTIVITIES_PASSWORD_HASH = '89f6123f4e7479ea7a3c882cddab0d75dff7326d7af91b0830ce12c5c4bc9c3b10ebb58b537be3a0266b6712f99e970e4d786bf5f69289e49ac9eb5be6d83790';
+const ACTIVITIES_PASSWORD_HASH = '7b6025362eab2ba7c3109efd41c1905f0ec04fb27debf9ddc7e68753d3214f874ac76d0ed08e747c681173d7c2ac07f5d414d55638d2a13b22e3f5ecb5bb55de';
 
 const SECTION_CONFIG = {
   awards: { titleId: 'awards-title', descriptionId: 'awards-description', containerId: 'awards-cards' },
