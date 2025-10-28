@@ -1,0 +1,42 @@
+{
+  "title": {
+    "ko": "공개 불가 활동",
+    "en": "Private Activities"
+  },
+  "description": {
+    "ko": "비밀번호 인증 후 열람 가능합니다.",
+    "en": "Visible after additional authentication."
+  },
+  "groups": [
+    {
+      "title": {
+        "ko": "2025년",
+        "en": "2025"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "포카전 해킹 종목 운영",
+            "en": "POKA Intercollegiate Festival - Hacking Event"
+          },
+          "details": {
+            "ko": "2025.09.19 – 2025.09.20 · 해킹 종목 운영",
+            "en": "Sep 19 – Sep 20, 2025 · Managed the hacking event"
+          },
+          "links": []
+        },
+        {
+          "title": {
+            "ko": "[**secret**] 취약점 분석",
+            "en": "Vulnerability Analysis for [**secret**]"
+          },
+          "details": {
+            "ko": "[**secret**] 취약점 분석",
+            "en": "Vulnerability Analysis for [**secret**]"
+          },
+          "links": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "title": {
+    "ko": "CVE 발견",
+    "en": "CVE Discovery"
+  },
+  "description": {
+    "ko": "발견한 CVE 내역입니다.",
+    "en": "CVE discoveries."
+  },
+  "items": [
+    {
+      "title": {
+        "ko": "CVE-2024-11950 · XnSoft XnView Classic 정수 언더플로우",
+        "en": "CVE-2024-11950 · XnSoft XnView Classic Integer Underflow"
+      },
+      "meta": {
+        "ko": "중대 심각도 · Remote Code Execution",
+        "en": "High Severity · RCE"
+      },
+      "body": {
+        "ko": "특수 제작된 RWZ 파일로 정수 언더플로우를 유발해 원격 코드 실행이 가능한 취약점을 발견·보고했습니다.",
+        "en": "Crafted RWZ files could trigger integer underflow leading to remote code execution. Reported via the Zero Day Initiative."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "ZDI 권고문",
+            "en": "ZDI Advisory"
+          },
+          "href": "https://www.zerodayinitiative.com/advisories/ZDI-24-1640/"
+        },
+        {
+          "label": {
+            "ko": "CVE 기록",
+            "en": "CVE Record"
+          },
+          "href": "https://www.cve.org/CVERecord?id=CVE-2024-11950"
+        }
+      ]
+    }
+  ]
+}

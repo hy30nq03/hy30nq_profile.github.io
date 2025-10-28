@@ -1,0 +1,42 @@
+{
+  "title": {
+    "ko": "자격증",
+    "en": "Verified expertise"
+  },
+  "description": {
+    "ko": "공식 자격 기록입니다.",
+    "en": "Official certifications."
+  },
+  "items": [
+    {
+      "title": {
+        "ko": "정보처리기능사",
+        "en": "Information Processing Craftsman"
+      },
+      "meta": {
+        "ko": "한국산업인력공단 · 2024",
+        "en": "HRD Korea · 2024"
+      },
+      "body": {
+        "ko": "정보처리기능사 자격증을 취득했습니다.",
+        "en": "Obtained the Information Processing Craftsman certification."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "자격 정보",
+            "en": "Q-Net Credential Info"
+          },
+          "href": "https://www.q-net.or.kr/man001.do?gSite=Q&gIntro=Y"
+        },
+        {
+          "label": {
+            "ko": "수료증빙",
+            "en": "Certificate Scan"
+          },
+          "href": "assets/proof/정보처리기능사.pdf"
+        }
+      ]
+    }
+  ]
+}

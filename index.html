@@ -1,1057 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script>location.href = "/korean.pdf"</script>
-    <!-- End Google Tag Manager -->
-    <meta charset="UTF-8" />
-    <title>hy30nq's site</title>
-    <!-- Meta tags for responsiveness and SEO -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>hy30nq | Security Researcher & CTF Specialist</title>
     <meta
       name="description"
-      content="Welcome to hy30nq's site. AI & Security Research Portfolio"
+      content="Portfolio for hy30nq: security researcher, CTF builder, and cybersecurity educator. Content is rendered dynamically from profile.md."
     />
-    <meta
-      name="keywords"
-      content="hy30nq, security research, AI, cybersecurity, portfolio"
-    />
-    <meta name="theme-color" content="#8B1F41" />
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="hy30nq's Portfolio" />
-    <meta
-      property="og:description"
-      content="AI & Security Research Portfolio"
-    />
-    <meta property="og:type" content="website" />
-
-    <!-- Favicon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="favicon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon/manifest.json" />
-    <meta name="msapplication-TileColor" content="#8B1F41" />
-    <meta
-      name="msapplication-TileImage"
-      content="favicon/ms-icon-144x144.png"
-    />
-    <!-- Style sheet -->
-    <link rel="stylesheet" href="./style.css" />
-    <!-- Google Fonts - 최신 폰트 사용 -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Font Awesome icons - 최신 버전 사용 -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <!-- Boxicons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!-- 중요 리소스 미리 로드 -->
-    <link rel="preload" href="profile_next.png" as="image" />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
-      as="style"
-    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script>
+      (function () {
+        const storedTheme = localStorage.getItem('hy30nq-theme');
+        if (storedTheme) {
+          document.documentElement.dataset.theme = storedTheme;
+          document.body?.setAttribute('data-theme', storedTheme);
+        }
+      })();
+    </script>
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-X5V3702YJ8"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-X5V3702YJ8");
-  </script>
-
-  <body class="dark-mode">
-    <!-- Theme Toggle -->
-    <div class="theme-toggle">
-      <i class="bx bx-moon"></i>
-      <i class="bx bx-sun"></i>
-    </div>
-
-    <!-- Language Toggle -->
-    <div class="lang-toggle">KO</div>
-
-    <!-- Floating Navigation Menu -->
-    <nav class="floating-nav">
-      <ul>
-        <li>
-          <a href="#about" class="nav-item active"
-            ><i class="bx bx-user"></i
-            ><span data-lang-ko="소개" data-lang-en="About">About</span></a
-          >
-        </li>
-        <li>
-          <a href="#awards" class="nav-item"
-            ><i class="bx bx-trophy"></i
-            ><span data-lang-ko="수상" data-lang-en="Awards">Awards</span></a
-          >
-        </li>
-        <li>
-          <a href="#projects" class="nav-item"
-            ><i class="bx bx-code-alt"></i
-            ><span data-lang-ko="프로젝트" data-lang-en="Projects"
-              >Projects</span
-            ></a
-          >
-        </li>
-        <li>
-          <a href="#experiences" class="nav-item"
-            ><i class="bx bx-briefcase"></i
-            ><span data-lang-ko="경험" data-lang-en="Experiences"
-              >Experiences</span
-            ></a
-          >
-        </li>
-        <li>
-          <a href="#cve" class="nav-item"
-            ><i class="bx bx-shield-quarter"></i><span>CVE</span></a
-          >
-        </li>
-        <li>
-          <a href="#certificates" class="nav-item"
-            ><i class="bx bx-certification"></i
-            ><span data-lang-ko="자격증" data-lang-en="Certificates"
-              >Certificates</span
-            ></a
-          >
-        </li>
-        <li>
-          <a href="#presentations" class="nav-item"
-            ><i class="bx bx-slideshow"></i
-            ><span data-lang-ko="발표" data-lang-en="Presentations"
-              >Presentations</span
-            ></a
-          >
-        </li>
-        <li>
-          <a href="#languages" class="nav-item"
-            ><i class="bx bx-globe"></i
-            ><span data-lang-ko="언어" data-lang-en="Languages"
-              >Languages</span
-            ></a
-          >
-        </li>
-        <li>
-          <a href="#education" class="nav-item"
-            ><i class="bx bx-book"></i
-            ><span data-lang-ko="학력" data-lang-en="Education"
-              >Education</span
-            ></a
-          >
-        </li>
-      </ul>
-    </nav>
-
-    <!-- Mobile Bottom Navigation -->
-    <nav class="mobile-nav">
-      <a href="#about" class="mobile-nav-item active"
-        ><i class="bx bx-user"></i
-        ><span data-lang-ko="소개" data-lang-en="About">About</span></a
-      >
-      <a href="#awards" class="mobile-nav-item"
-        ><i class="bx bx-trophy"></i
-        ><span data-lang-ko="수상" data-lang-en="Awards">Awards</span></a
-      >
-      <a href="#projects" class="mobile-nav-item"
-        ><i class="bx bx-code-alt"></i
-        ><span data-lang-ko="프로젝트" data-lang-en="Projects"
-          >Projects</span
-        ></a
-      >
-      <a href="#experiences" class="mobile-nav-item"
-        ><i class="bx bx-briefcase"></i
-        ><span data-lang-ko="경험" data-lang-en="Experiences"
-          >Experiences</span
-        ></a
-      >
-      <a href="#" class="more-nav-toggle"
-        ><i class="bx bx-menu"></i
-        ><span data-lang-ko="더보기" data-lang-en="More">More</span></a
-      >
-    </nav>
-
-    <!-- More Menu for Mobile -->
-    <div class="more-menu">
-      <div class="more-menu-header">
-        <span data-lang-ko="메뉴" data-lang-en="Menu">Menu</span>
-        <button class="more-menu-close"><i class="bx bx-x"></i></button>
-      </div>
-      <div class="more-menu-content">
-        <a href="#cve" class="more-menu-item"
-          ><i class="bx bx-shield-quarter"></i><span>CVE</span></a
-        >
-        <a href="#certificates" class="more-menu-item"
-          ><i class="bx bx-certification"></i
-          ><span data-lang-ko="자격증" data-lang-en="Certificates"
-            >Certificates</span
-          ></a
-        >
-        <a href="#presentations" class="more-menu-item"
-          ><i class="bx bx-slideshow"></i
-          ><span data-lang-ko="발표" data-lang-en="Presentations"
-            >Presentations</span
-          ></a
-        >
-        <a href="#languages" class="more-menu-item"
-          ><i class="bx bx-globe"></i
-          ><span data-lang-ko="언어" data-lang-en="Languages"
-            >Languages</span
-          ></a
-        >
-        <a href="#education" class="more-menu-item"
-          ><i class="bx bx-book"></i
-          ><span data-lang-ko="학력" data-lang-en="Education"
-            >Education</span
-          ></a
-        >
+  <body id="top" data-theme="light">
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <noscript class="noscript-banner">
+      This site uses advanced animations and dynamic content. Please enable JavaScript for the full experience.
+    </noscript>
+    <div id="devtools-blocker" class="devtools-blocker" aria-hidden="true">
+      <div class="devtools-blocker__inner">
+        <h2>Developer Tools Disabled</h2>
+        <p>
+          Security-sensitive data is protected. Please close any developer tools or inspection panels to continue.
+        </p>
       </div>
     </div>
 
-    <!-- Main container -->
-    <div class="container">
-      <!-- Hero Section -->
-      <section class="hero-section">
-        <div class="glass-card profile-card">
-          <div class="profile-top">
-            <div class="profile-img">
-              <img src="profile_next.png" alt="Profile Image" />
+    <!-- 메인 로그인 모달 -->
+    <div id="login-modal" class="login-modal">
+      <div class="login-container" data-animate="scale">
+        <div class="login-header">
+          <h2>Portfolio Access</h2>
+          <p>Enter the password to access the portfolio (password: my full name)</p>
+        </div>
+        <form id="login-form" class="login-form">
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit" class="btn btn--primary login-btn">Login</button>
+        </form>
+        <div id="login-error" class="login-error" style="display: none;">
+          Incorrect password.
+        </div>
+      </div>
+    </div>
+
+    <!-- 대외활동 로그인 모달 -->
+    <div id="activities-login-modal" class="login-modal" style="display: none;">
+      <div class="login-container" data-animate="scale">
+        <div class="login-header">
+          <h2>🔒 Activities Access</h2>
+          <p>대외활동 정보를 보려면 비밀번호를 입력하세요</p>
+          <button type="button" class="modal-close" aria-label="Close activities modal" data-close-activities>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="m7 7 10 10M17 7 7 17" />
+            </svg>
+          </button>
+        </div>
+        <form id="activities-login-form" class="login-form">
+          <div class="form-group">
+            <label for="activities-password">Password</label>
+            <input type="password" id="activities-password" name="activities-password" required />
+          </div>
+          <button type="submit" class="btn btn--primary login-btn">확인</button>
+        </form>
+        <div id="activities-login-error" class="login-error" style="display: none;">
+          잘못된 비밀번호입니다.
+        </div>
+      </div>
+    </div>
+
+    <!-- 메인 콘텐츠 (로그인 전에는 숨김) -->
+    <div id="main-content" class="site-shell" style="display: none;">
+      <header class="site-header" data-animate="fade">
+        <div class="container header__nav">
+          <a class="brand" href="#top" aria-label="Back to top">
+            <span class="brand__mark" aria-hidden="true"></span>
+            hy30nq
+          </a>
+          <div class="header__chips" role="group" aria-label="Quick links">
+            <a class="chip-link" href="#top">Overview</a>
+            <a class="chip-link" href="#contact">Contact</a>
+            <a class="chip-link" href="#awards">Awards</a>
+            <a class="chip-link" href="#projects">Projects</a>
+          </div>
+          <div class="header__controls">
+            <button
+              class="nav-toggle"
+              type="button"
+              aria-label="Toggle navigation"
+              aria-expanded="false"
+              aria-controls="primary-nav"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <a class="btn btn--small" href="mailto:hy30nq@gmail.com">Let’s collaborate</a>
+            <div class="header__locale">
+              <div class="language-switch" id="language-switch">
+                <button type="button" data-lang="ko">한국어</button>
+                <button type="button" data-lang="en" class="is-active">EN</button>
+              </div>
+              <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+                <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 4V2m0 20v-2m10-8h-2M4 12H2m17.657-7.657-1.414 1.414M7.757 18.343l-1.414 1.414m0-14.142 1.414 1.414M18.343 18.343l1.414 1.414M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z" />
+                </svg>
+                <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M21 12.79A9 9 0 0 1 11.21 3 7.5 7.5 0 1 0 21 12.79Z" />
+                </svg>
+              </button>
             </div>
-            <div class="profile-text">
-              <h1 class="name">hy30nq</h1>
-              <p
-                class="alias"
-                data-lang-ko="대학생 | AI 및 보안 연구"
-                data-lang-en="Student | AI & Security Research"
-              >
-                Student | AI & Security Research
+          </div>
+          <nav id="primary-nav" class="site-nav" aria-label="Primary">
+            <ul>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#awards">Awards</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#cve">CVE</a></li>
+              <li><a href="#certifications">Certifications</a></li>
+              <li><a href="#presentations">Presentations</a></li>
+              <li><a href="#training">Training</a></li>
+              <li><a href="#languages">Languages</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#scholarships">Scholarships</a></li>
+              <li><a href="#activities">Activities</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" data-animate="fade">
+          <div class="hero__background" aria-hidden="true">
+            <canvas id="hero-scene"></canvas>
+            <div class="hero__glow hero__glow--one"></div>
+            <div class="hero__glow hero__glow--two"></div>
+          </div>
+          <div class="container hero__inner">
+            <div class="hero__copy">
+              <p class="eyebrow" id="hero-eyebrow">Calibrating signal…</p>
+              <h1 id="hero-title">hy30nq Portfolio</h1>
+              <p class="lead" id="hero-lead">
+                Security research, capture-the-flag engineering, and continuous innovation across modern threat surfaces.
+              </p>
+              <div class="hero__actions" id="hero-actions" data-animate="rise">
+                <p class="loading-message">Loading actions…</p>
+              </div>
+              <div class="hero__metrics" id="hero-metrics" aria-live="polite"></div>
+              <div class="hero__affiliations" id="hero-affiliations" data-animate="fade"></div>
+            </div>
+            <aside class="hero__aside" aria-label="Profile photo">
+              <div class="hero__avatar" data-tilt data-animate="pop">
+                <img src="assets/img/profile.png" alt="hy30nq profile portrait" />
+              </div>
+            </aside>
+          </div>
+          <div class="scroll-cue" aria-hidden="true">
+            <span class="scroll-cue__dot"></span>
+            <p>Scroll</p>
+          </div>
+        </section>
+
+        <section id="contact" class="section section--split" data-animate="fade">
+          <div class="container">
+            <div class="section__intro">
+              <p class="section__kicker">Contact</p>
+              <h2 id="contact-heading">Ready to connect</h2>
+              <p id="contact-description">
+                Secure channels and collaboration touchpoints surface automatically from live profile data.
               </p>
             </div>
+            <div class="contact-grid" id="contact-cards">
+              <p class="loading-message">Loading contact links…</p>
+            </div>
           </div>
+        </section>
 
-          <div class="social-icons">
-            <a
-              href="https://hyeonql.tistory.com/"
-              target="_blank"
-              aria-label="Blog"
-              ><i class="fas fa-blog"></i
-            ></a>
-            <a
-              href="https://www.instagram.com/hy30nq/"
-              target="_blank"
-              aria-label="Instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a
-              href="https://github.com/hy30nq03/"
-              target="_blank"
-              aria-label="GitHub"
-              ><i class="fab fa-github"></i
-            ></a>
+        <section id="awards" class="section" data-animate="fade">
+          <div class="container">
+            <div class="section__intro">
+              <p class="section__kicker">Recognition</p>
+              <h2 id="awards-title">Impactful distinctions</h2>
+              <p id="awards-description">Validated achievements from national competitions and research programs.</p>
+            </div>
+            <div class="grid grid--cards" id="awards-cards">
+              <p class="loading-message">Gathering award summaries…</p>
+            </div>
           </div>
-        </div>
+        </section>
 
-        <div class="scroll-indicator">
-          <span data-lang-ko="아래로 스크롤" data-lang-en="Scroll Down"
-            >Scroll Down</span
-          >
-          <i class="bx bx-chevrons-down"></i>
-        </div>
-      </section>
+        <section id="projects" class="section section--alt" data-animate="fade">
+          <div class="container">
+            <div class="section__intro">
+              <p class="section__kicker">Projects</p>
+              <h2 id="projects-title">Selected work</h2>
+              <p id="projects-description">Explorations across offensive and defensive security disciplines.</p>
+            </div>
+            <div class="grid grid--cards" id="projects-cards">
+              <p class="loading-message">Collecting project highlights…</p>
+            </div>
+          </div>
+        </section>
 
-      <!-- About Section -->
-      <section id="about" class="content-section">
-        <div class="section-title">
-          <h2>
-            <i class="bx bx-user"></i>
-            <span data-lang-ko="소개" data-lang-en="About">About</span>
-          </h2>
-        </div>
-        <div class="glass-card">
-          <div class="about-top-row">
-            <div class="about-item">
-              <strong data-lang-ko="이름: " data-lang-en="Name: "
-                >Name:
-              </strong>
-              <span>hy30nq</span>
+        <section id="cve" class="section" data-animate="fade">
+          <div class="container">
+            <div class="section__intro">
+              <p class="section__kicker">Security Research</p>
+              <h2 id="cve-title">Responsible disclosure</h2>
+              <p id="cve-description">Documented vulnerabilities and coordinated disclosure outcomes.</p>
             </div>
-            <div class="about-item">
-              <strong>Blog: </strong>
-              <a href="https://hyeonql.tistory.com/" target="_blank"
-                >hyeonql.tistory.com</a
-              >
-            </div>
-            <div class="about-item">
-              <strong>Instagram: </strong>
-              <a href="https://www.instagram.com/hy30nq/" target="_blank"
-                >@hy30nq</a
-              >
+            <div class="grid grid--cards" id="cve-cards">
+              <p class="loading-message">Listing CVE contributions…</p>
             </div>
           </div>
-          <div class="about-bottom-row">
-            <div class="about-affiliations">
-              <strong data-lang-ko="소속: " data-lang-en="Affiliations: "
-                >Affiliations:
-              </strong>
-              <span class="affiliation-badge"
-                ><a href="https://kuality.kr/" target="_blank">KUality</a></span
-              >
-              <span class="affiliation-badge"
-                ><a href="https://hspace.io/" target="_blank"
-                  >Knights of the SPACE</a
-                ></span
-              >
-              <span class="affiliation-badge"
-                ><a href="https://rubiyalab.team/" target="_blank"
-                  >Rubiyalab</a
-                ></span
-              >
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Awards Section -->
-      <section id="awards" class="content-section">
-        <div class="section-title">
-          <h2>
-            <i class="bx bx-trophy"></i>
-            <span data-lang-ko="수상" data-lang-en="Awards">Awards</span>
-          </h2>
-        </div>
-        <div class="glass-card">
-          <div class="awards-grid">
-            <div class="award-item">
-              <div class="award-icon"><i class="bx bxs-medal"></i></div>
-              <div class="award-content">
-                <h3>장려상</h3>
-                <p>2024년 제2회 개인정보보호/보안 정책 아이디어 공모전</p>
-                <p>
-                  (수상작: 개인정보 익명화 인증 제도 도입을 통한 데이터 활용과
-                  개인정보보호의 균형 정책 제안)
-                </p>
-                <p class="award-date">2025.02.07</p>
-              </div>
+        <section id="certifications" class="section section--alt" data-animate="fade">
+          <div class="container">
+            <div class="section__intro">
+              <p class="section__kicker">Credentials</p>
+              <h2 id="certifications-title">Verified expertise</h2>
+              <p id="certifications-description">Formal validations of security and engineering capabilities.</p>
             </div>
-            <div class="award-item">
-              <div class="award-icon"><i class="bx bxs-medal"></i></div>
-              <div class="award-content">
-                <h3>우수상 (한국정보보호산업협회장상)</h3>
-                <p>AI보안 기술개발 참여수기 공모전</p>
-                <p class="award-date">2024.12.20</p>
-              </div>
-            </div>
-            <div class="award-item">
-              <div class="award-icon"><i class="bx bxs-medal"></i></div>
-              <div class="award-content">
-                <h3>최우수 수료생 (개인) (과학기술정보통신부 장관상)</h3>
-                <p>AI보안 기술개발 교육과정</p>
-                <p class="award-date">2024.12.20</p>
-              </div>
-            </div>
-            <div class="award-item">
-              <div class="award-icon"><i class="bx bxs-medal"></i></div>
-              <div class="award-content">
-                <h3>최우수상 (과학기술정보통신부 장관상)</h3>
-                <p>
-                  <a
-                    href="https://www.boannews.com/media/view.asp?idx=132213&direct=mobile"
-                    target="_blank"
-                    >2024 제2회 KISIA 정보보호 개발자 해커톤</a
-                  >
-                </p>
-                <p class="award-date">2024.08.21</p>
-              </div>
-            </div>
-            <div class="award-item">
-              <div class="award-icon"><i class="bx bxs-medal"></i></div>
-              <div class="award-content">
-                <h3>우승</h3>
-                <p>29회 하계 해킹캠프 CTF (Team 고민중독)</p>
-                <p class="award-date">2024.08.18</p>
-              </div>
-            </div>
-            <div class="award-item">
-              <div class="award-icon"><i class="bx bxs-medal"></i></div>
-              <div class="award-content">
-                <h3>TOP7</h3>
-                <p>KnockOn elite whitehacker bootcamp 1st</p>
-                <p class="award-date">2024.06.02</p>
-              </div>
-            </div>
-            <div class="award-item">
-              <div class="award-icon"><i class="bx bxs-medal"></i></div>
-              <div class="award-content">
-                <h3>TOP 20 (과학기술정보통신부 장관 인증서)</h3>
-                <p>
-                  <a
-                    href="https://www.msit.go.kr/bbs/view.do?sCode=user&mId=113&mPid=238&bbsSeqNo=94&nttSeqNo=3184227"
-                    target="_blank"
-                    >KITRI 차세대 보안리더 양성프로그램 화이트햇 스쿨 (Pre-BoB)
-                    1기</a
-                  >
-                </p>
-                <p class="award-date">2024.03.22</p>
-              </div>
+            <div class="grid grid--cards" id="certification-cards">
+              <p class="loading-message">Loading certifications…</p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Projects Section -->
-      <section id="projects" class="content-section">
-        <div class="section-title">
-          <h2>
-            <i class="bx bx-code-alt"></i>
-            <span data-lang-ko="프로젝트" data-lang-en="Projects"
-              >Projects</span
-            >
-          </h2>
-        </div>
-        <div class="glass-card">
-          <div class="projects-grid">
-            <div class="project-card">
-              <div class="project-header">
-                <h3>HSPACE Pentest 컨텐츠 제작 프로젝트</h3>
-                <span class="project-year">2025</span>
-              </div>
-              <div class="project-body">
-                <p>Knights of the SPACE</p>
-                <p>기간: 2025.06.09 ~ 2025.07.30</p>
-              </div>
+        <section id="presentations" class="section" data-animate="fade">
+          <div class="container">
+            <div class="section__intro">
+              <p class="section__kicker">Speaking</p>
+              <h2 id="presentations-title">Presentations</h2>
+              <p id="presentations-description">Conference talks and knowledge-sharing engagements.</p>
             </div>
-            <div class="project-card">
-              <div class="project-header">
-                <h3>실전 버그바운티 사례로 제작하는 CTF 문제</h3>
-                <span class="project-year">2025</span>
-              </div>
-              <div class="project-body">
-                <p>파인더갭 주식회사 - 고용노동부 미래내일일경험사업</p>
-                <p>기간: 2025.06.09 ~ 2025.08.01</p>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="project-header">
-                <h3>Earth CTF 사이트 개발</h3>
-                <span class="project-year">2024</span>
-              </div>
-              <div class="project-body">
-                <p>인공지능사이버보안학과 웹프로그래밍</p>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/hy30nq/earth-ctf-site"
-                    target="_blank"
-                    ><i class="bx bxl-github"></i> GitHub</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="project-header">
-                <h3>WordPress Plugin Vulnerabilities</h3>
-                <span class="project-year">2024</span>
-              </div>
-              <div class="project-body">
-                <p>
-                  인공지능사이버보안학과 학술제 - Exploring WordPress Plugin
-                  Vulnerabilities Using a Vulnerability Detection Program
-                </p>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="project-header">
-                <h3>AI powered malicious URL checker</h3>
-                <span class="project-year">2024</span>
-              </div>
-              <div class="project-body">
-                <p>한국정보보호산업협회(KISIA)</p>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/racheliee/kisia-project"
-                    target="_blank"
-                    ><i class="bx bxl-github"></i> GitHub</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="project-header">
-                <h3>Food AI 개인화 추천 솔루션 고도화</h3>
-                <span class="project-year">2024</span>
-              </div>
-              <div class="project-body">
-                <p>고용노동부(일자리경험)</p>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="project-header">
-                <h3>LAMP stack으로 웹 사이트 구현 및 취약점 실습</h3>
-                <span class="project-year">2024</span>
-              </div>
-              <div class="project-body">
-                <p>KnockOn bootcamp 1st</p>
-                <div class="project-links">
-                  <a
-                    href="https://github.com/hy30nq/myWebsiteWithKnock"
-                    target="_blank"
-                    ><i class="bx bxl-github"></i> GitHub</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="project-header">
-                <h3>윈도우 소프트웨어 버그헌팅</h3>
-                <span class="project-year">2023-2024</span>
-              </div>
-              <div class="project-body">
-                <p>화이트햇 스쿨</p>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="project-header">
-                <h3>api 활용한 영화 추천 프로그램</h3>
-                <span class="project-year">2023</span>
-              </div>
-              <div class="project-body">
-                <p>파이썬프로그래밍(학교 수업)</p>
-              </div>
+            <div class="grid grid--cards" id="presentations-cards">
+              <p class="loading-message">Loading presentation history…</p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Experiences Section -->
-      <section id="experiences" class="content-section">
-        <div class="section-title">
-          <h2>
-            <i class="bx bx-briefcase"></i>
-            <span data-lang-ko="경험" data-lang-en="Experiences"
-              >Experiences</span
-            >
-          </h2>
-        </div>
-        <div class="glass-card">
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-date">2025.08.29-2025.08.30</div>
-              <div class="timeline-content">
-                <h3>SSD CTF</h3>
-                <p>CTF 문제 출제</p>
-              </div>
+        <section id="training" class="section section--alt" data-animate="fade">
+          <div class="container">
+            <div class="section__intro">
+              <p class="section__kicker">Continuous Learning</p>
+              <h2 id="training-title">Training & fellowships</h2>
+              <p id="training-description">Immersive programs and residencies focused on security excellence.</p>
             </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2025.08.25-2025.08.26</div>
-              <div class="timeline-content">
-                <h3>XKSW 연합 세미나</h3>
-                <p>CTF 문제 검수</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2025.08.06 - 2025.08.30</div>
-              <div class="timeline-content">
-                <h3>한국정보기술연구원(KITRI)</h3>
-                <p>화이트햇 스쿨 3기 3단계 조교</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2025.08.07</div>
-              <div class="timeline-content">
-                <h3>APEX 2025 테스트런</h3>
-                <p><a href="https://www.cybersummit.kr/PageLink/" target="_blank">사이버서밋 2025</a></p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2025.07.28 - 2025.08.01</div>
-              <div class="timeline-content">
-                <h3>한국장학재단</h3>
-                <p>알리바바 본사 견학 및 연수</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2025.06</div>
-              <div class="timeline-content">
-                <h3>한국정보기술연구원(KITRI)</h3>
-                <p>화이트햇 스쿨 3기 중간발표 조교 (2025.06.28)</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2025.06</div>
-              <div class="timeline-content">
-                <h3>한국정보보호산업협회 한국정보보호교육원</h3>
-                <p>
-                  ICT융합산업보안 인력양성사업 AI보안 (2025.06.24 ~ 2025.06.26)
-                </p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2025.02 - 2025.06</div>
-              <div class="timeline-content">
-                <h3>BusinessH4C(B4C)</h3>
-                <p>빡공팟 레드팀 1기 elite 3 (2025.02.24 ~ 2025.06.22)</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2025.03</div>
-              <div class="timeline-content">
-                <h3>한국인터넷진흥원(KISA)</h3>
-                <p>버그헌팅 실습 훈련 - 초급과정 (2025.03.04 ~ 2025.03.15)</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2025.03 - 2025.05</div>
-              <div class="timeline-content">
-                <h3>한국정보기술연구원(KITRI)</h3>
-                <p>화이트햇 스쿨 3기 1단계 조교</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2025.02</div>
-              <div class="timeline-content">
-                <h3>POC Security</h3>
-                <p>30회 동계 해킹캠프 (2025.02.15 ~ 2025.02.16)</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2025.01</div>
-              <div class="timeline-content">
-                <h3>고려대학교 개인정보보호융합전공</h3>
-                <p>싱가포르 해외 연수 (2025.01.12 ~ 2025.01.16)</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2024.09 - 2025.01</div>
-              <div class="timeline-content">
-                <h3>kakao, goorm</h3>
-                <p>구름톤 유니브 3기</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2024.11 - 2024.12</div>
-              <div class="timeline-content">
-                <h3>한국정보기술연구원(KITRI)</h3>
-                <p>화이트햇 스쿨 서포터즈 (2024.11.18 ~ 2024.12.27)</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2024.07 - 2024.12</div>
-              <div class="timeline-content">
-                <h3>과학기술정보통신부, 한국인터넷진흥원(KISA)</h3>
-                <p>2024 블록체인 누리단</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2024.06 - Now</div>
-              <div class="timeline-content">
-                <h3>KnockOn</h3>
-                <p>KnockOn Q&A 멘토</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2024.07 - 2024.10</div>
-              <div class="timeline-content">
-                <h3>한국정보보호산업협회(KISIA)</h3>
-                <p>
-                  KISIA AI 보안기술개발 네트워크반 (2024.07.08 ~ 2024.10.25)
-                </p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2024.07 - 2024.12</div>
-              <div class="timeline-content">
-                <h3>개인정보보호위원회, 한국인터넷진흥원(KISA)</h3>
-                <p>
-                  개인정보 불법유통 대응 대학생 모니터링단 (2024.07.22 ~
-                  2024.12.03)
-                </p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2024.10</div>
-              <div class="timeline-content">
-                <h3>중부정보보호지원센터</h3>
-                <p>웹취약점 점검 실습 (2024.10.08)</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2024.09</div>
-              <div class="timeline-content">
-                <h3>한국정보보호산업협회 한국정보보호교육원</h3>
-                <p>
-                  융합보안 인력양성 교육 (블록체인 (기초)) (2024.09.04 ~
-                  2024.09.06)
-                </p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2024.08</div>
-              <div class="timeline-content">
-                <h3>POC Security</h3>
-                <p>29회 하계 해킹캠프 (2024.08.17 ~ 2024.08.18)</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2024.05 - 2024.06</div>
-              <div class="timeline-content">
-                <h3>코멘토 진로부트캠프</h3>
-                <p>
-                  현업 보안 담당자와 함께 정보보안, 개인정보 보호 실무체험하기
-                  (2024.05.09 ~ 2024.06.30)
-                </p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2024.02 - 2024.05</div>
-              <div class="timeline-content">
-                <h3>KnockOn</h3>
-                <p>
-                  KnockOn elite whitehacker bootcamp 1st (2024.02.17 ~
-                  2024.05.30)
-                </p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2023.09 - 2024.03</div>
-              <div class="timeline-content">
-                <h3>한국정보기술연구원(KITRI)</h3>
-                <p>
-                  <a
-                    href="https://www.msit.go.kr/bbs/view.do?sCode=user&mId=113&mPid=238&bbsSeqNo=94&nttSeqNo=3184227"
-                    target="_blank"
-                    >차세대 보안리더 양성 프로그램 화이트햇 스쿨 1st (2023.09.01
-                    ~ 2024.03.22)</a
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2023.08</div>
-              <div class="timeline-content">
-                <h3>국가과학기술인력개발원(KIRD)</h3>
-                <p>
-                  사이버보안 하계 직무연계 교육과정(정보보호특성화대학)
-                  (2023.08.16 ~ 2023.08.18)
-                </p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">2023.07</div>
-              <div class="timeline-content">
-                <h3>한국정보보호교육센터(KISEC)</h3>
-                <p>Start-Up K-Shield Jr. (2023.07.01~2023.07.31)</p>
-              </div>
+            <div class="timeline-grid" id="training-timeline">
+              <p class="loading-message">Documenting training programs…</p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- CVE Section -->
-      <section id="cve" class="content-section">
-        <div class="section-title">
-          <h2><i class="bx bx-shield-quarter"></i> CVE</h2>
-        </div>
-        <div class="glass-card">
-          <div class="cve-container">
-            <div class="cve-card">
-              <div class="cve-id">CVE-2024-11950</div>
-              <div class="cve-details">
-                <h3>
-                  XnSoft XnView Classic RWZ File Parsing Integer Underflow
-                </h3>
-                <p>Remote Code Execution Vulnerability</p>
-                <a
-                  href="https://www.zerodayinitiative.com/advisories/ZDI-24-1640/"
-                  target="_blank"
-                  class="cve-link"
-                  >ZDI-24-1640 <i class="bx bx-link-external"></i
-                ></a>
-              </div>
+        <section id="languages" class="section" data-animate="fade">
+          <div class="container">
+            <div class="section__intro">
+              <p class="section__kicker">Communication</p>
+              <h2 id="languages-title">Languages</h2>
+              <p id="languages-description">Multilingual collaboration and research readiness.</p>
+            </div>
+            <div class="grid grid--three" id="languages-grid">
+              <p class="loading-message">Listing language proficiency…</p>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- Certificates Section -->
-      <section id="certificates" class="content-section">
-        <div class="section-title">
-          <h2>
-            <i class="bx bx-certification"></i>
-            <span data-lang-ko="자격증" data-lang-en="Certificates"
-              >Certificates</span
-            >
-          </h2>
-        </div>
-        <div class="glass-card">
-          <div class="cert-container">
-            <div class="cert-item">
-              <div class="cert-icon"><i class="bx bx-badge-check"></i></div>
-              <div class="cert-content">
-                <h3>정보처리기능사</h3>
-                <p class="cert-date">2024</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Presentations Section -->
-      <section id="presentations" class="content-section">
-        <div class="section-title">
-          <h2>
-            <i class="bx bx-slideshow"></i>
-            <span data-lang-ko="발표" data-lang-en="Presentations"
-              >Presentations</span
-            >
-          </h2>
-        </div>
-        <div class="glass-card">
-          <div class="pres-container">
-            <div class="pres-item">
-              <div class="pres-icon"><i class="bx bx-broadcast"></i></div>
-              <div class="pres-content">
-                <h3>2024 정보보호 인재양성 교육사업 성과교류회</h3>
-                <p class="pres-date">2024</p>
-              </div>
+        <section id="education" class="section section--alt" data-animate="fade">
+          <div class="container">
+            <div class="section__intro">
+              <p class="section__kicker">Academic Journey</p>
+              <h2 id="education-title">Education</h2>
+              <p id="education-description">Formal studies underpinning security research and development.</p>
+            </div>
+            <div class="grid grid--cards" id="education-cards">
+              <p class="loading-message">Compiling academic history…</p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Languages Section -->
-      <section id="languages" class="content-section">
-        <div class="section-title">
-          <h2>
-            <i class="bx bx-globe"></i>
-            <span data-lang-ko="언어" data-lang-en="Languages">Languages</span>
-          </h2>
-        </div>
-        <div class="glass-card">
-          <div class="lang-container">
-            <div class="lang-item">
-              <div class="lang-name">
-                <h3>Chinese</h3>
-              </div>
-              <div class="lang-details">
-                <div class="lang-cert">
-                  <p>HSK 四级 (Level 4)</p>
-                </div>
-                <div class="lang-cert">
-                  <p>HSKK 初级 (Elementary)</p>
-                </div>
-              </div>
+        <section id="scholarships" class="section" data-animate="fade">
+          <div class="container">
+            <div class="section__intro">
+              <p class="section__kicker">Support</p>
+              <h2 id="scholarships-title">Scholarships</h2>
+              <p id="scholarships-description">Recognition and support received from leading institutions.</p>
+            </div>
+            <div class="grid grid--cards" id="scholarship-cards">
+              <p class="loading-message">Loading scholarships…</p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Education Section -->
-      <section id="education" class="content-section">
-        <div class="section-title">
-          <h2>
-            <i class="bx bx-book"></i>
-            <span data-lang-ko="학력" data-lang-en="Education">Education</span>
-          </h2>
-        </div>
-        <div class="glass-card">
-          <div class="edu-timeline">
-            <div class="edu-item">
-              <div class="edu-year">2024</div>
-              <div class="edu-content">
-                <h3>고려대학교 개인정보보호융합전공</h3>
-              </div>
+        <section id="activities" class="section section--alt" data-animate="fade">
+          <div class="container">
+            <div class="section__intro">
+              <p class="section__kicker">Leadership & Service</p>
+              <h2 id="activities-title">Activities</h2>
+              <p id="activities-description"></p>
             </div>
-            <div class="edu-item">
-              <div class="edu-year">2023</div>
-              <div class="edu-content">
-                <h3>고려대학교 인공지능사이버보안학과 23학번</h3>
-              </div>
-            </div>
-            <div class="edu-item">
-              <div class="edu-year">2022</div>
-              <div class="edu-content">
-                <h3>
-                  <a
-                    href="https://drive.google.com/file/d/11CysMOz4Jr1vUBlAqe-5F5Wn8asIySix/view?usp=sharing"
-                    target="_blank"
-                    >고려대학교 중어중문학과 합격</a
-                  >
-                </h3>
-              </div>
-            </div>
-          </div>
 
-          <!--           장학금 정보 추가 -->
-          <div class="scholarships-container">
-            <h3 class="section-subtitle">
-              <i class="bx bx-award"></i>
-              <span data-lang-ko="장학금" data-lang-en="Scholarships"
-                >Scholarships</span
-              >
-            </h3>
-            <div class="scholarships-grid">
-              <div class="scholarship-item">
-                <div class="scholarship-icon">
-                  <i class="bx bxs-school"></i>
+            <div class="section__intro">
+              <h3 id="activities-public-title"></h3>
+            </div>
+            <div class="timeline-grid" id="activities-public-timeline">
+              <p class="loading-message">Loading public activity timeline…</p>
+            </div>
+
+            <div id="activities-login-required" class="activities-login-required">
+              <div class="activities-login-container" data-animate="fade">
+                <div class="activities-login-header">
+                  <h3>🔒 Protected Content</h3>
+                  <p>대외활동 정보를 보려면 추가 인증이 필요합니다.</p>
                 </div>
-                <div class="scholarship-content">
-                  <h4>고려대학교 KUPC 장학금</h4>
-                  <ul class="scholarship-terms">
-                    <!-- <li>2023년 2학기</li> -->
-                    <!-- <li>2024년 1학기</li> -->
-                    <!-- <li>2024년 2학기</li> -->
-                  </ul>
-                </div>
+                <button id="activities-login-btn" class="btn btn--primary">대외활동 보기</button>
               </div>
-              <div class="scholarship-item">
-                <div class="scholarship-icon"><i class="bx bxs-medal"></i></div>
-                <div class="scholarship-content">
-                  <h4>수곡장학회 장학금</h4>
-                  <ul class="scholarship-terms">
-                    <!-- <li>2024년</li> -->
-                    <!-- <li>2025년</li> -->
-                  </ul>
-                </div>
+            </div>
+
+            <div id="activities-content" class="activities-content" style="display: none;">
+              <div class="section__intro">
+                <h3 id="activities-private-title"></h3>
               </div>
-              <div class="scholarship-item">
-                <div class="scholarship-icon">
-                  <i class="bx bxs-donate-heart"></i>
-                </div>
-                <div class="scholarship-content">
-                  <h4>푸른등대 기부장학금</h4>
-                  <ul class="scholarship-terms">
-                    <!-- <li>2025년</li> -->
-                  </ul>
-                </div>
-              </div>
-              <div class="scholarship-item">
-                <div class="scholarship-icon">
-                  <i class="bx bxs-landmark"></i>
-                </div>
-                <div class="scholarship-content">
-                  <h4>재경남원향우회 장학금</h4>
-                  <ul class="scholarship-terms">
-                    <!-- <li>2024년</li> -->
-                  </ul>
-                </div>
-              </div>
-              <div class="scholarship-item">
-                <div class="scholarship-icon">
-                  <i class="bx bxs-graduation"></i>
-                </div>
-                <div class="scholarship-content">
-                  <h4>고려대학교 등록금 전액 장학금</h4>
-                </div>
+              <div class="timeline-grid" id="activities-private-timeline">
+                <p class="loading-message">Loading protected activity timeline…</p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
-      <!-- Footer Section -->
-      <footer class="footer">
-        <div class="footer-content">
-          <p>&copy; 2024-2025 hy30nq. All rights reserved.</p>
-          <div class="footer-social">
-            <a href="https://hyeonql.tistory.com/" target="_blank"
-              ><i class="fas fa-blog"></i
-            ></a>
-            <a href="https://www.instagram.com/hy30nq/" target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="https://github.com/hy30nq03/" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-          </div>
+      <footer class="site-footer" data-animate="fade">
+        <div class="container footer__inner">
+          <p>© <span id="year">2024</span> hy30nq. All rights reserved.</p>
+          <a href="#top" class="link">Back to top</a>
         </div>
       </footer>
     </div>
 
-    <!-- Back to top button -->
-    <a href="#" id="back-to-top" aria-label="Back to top"
-      ><i class="fas fa-chevron-up"></i
-    ></a>
-
-    <!-- Script files -->
-    <!-- jQuery (필요한 기본 라이브러리만 유지) -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- Custom scripts -->
-    <script src="./script.js"></script>
+    <script id="data-bundle" type="application/json">{"meta": {"languages": ["ko", "en"], "defaultLanguage": "en"}, "hero": {"eyebrow": {"ko": "대학생 · 보안 연구 지망생", "en": "University Student · Security Enthusiast"}, "title": {"ko": "안녕하세요. hy30nq입니다.", "en": "Hello, I'm hy30nq."}, "lead": {"ko": "아직 학생으로서 꾸준히 공부하며, 실전 경험을 바탕으로 다양한 보안 프로젝트와 연구에 도전하고 있습니다. 어렵고 새로운 내용을 배우고 직접 실습하며, 그 과정에서 얻은 깨달음을 기록하고 주변에도 쉽게 전달하려고 노력합니다.", "en": "As a student still learning, I constantly challenge myself with new security topics and hands-on projects. I focus on turning complex concepts into approachable study material and practical experience, sharing what I learn with others along the way."}, "actions": [{"style": "primary", "label": {"ko": "이메일", "en": "Email"}, "href": "mailto:hy30nq@gmail.com"}, {"style": "ghost", "label": {"ko": "GitHub", "en": "GitHub"}, "href": "https://github.com/hy30nq03"}, {"style": "ghost", "label": {"ko": "블로그", "en": "Blog"}, "href": "https://hyeonql.tistory.com/"}], "affiliations": [{"ko": "SeeCure Lab (고려대학교 강정민 교수님 연구실)", "en": "SeeCure Lab (Prof. Jung-Min Kang's Lab at Korea University)", "href": "https://secu.korea.ac.kr/faculty/8261/subview.do"}, {"ko": "KUality", "en": "KUality", "href": "https://kuality.kr/"}, {"ko": "Knights of the SPACE", "en": "Knights of the SPACE", "href": "https://hspace.io/"}, {"ko": "Rubiyalab", "en": "Rubiyalab", "href": "https://rubiyalab.team/"}]}, "contact": {"heading": {"ko": "hy30nq에게 연락하기", "en": "Partner with hy30nq"}, "description": {"ko": "모든 문의에 대한 응답은 24시간 내에 드립니다.", "en": "I respond to all inquiries within one business day."}, "channels": [{"type": "email", "label": {"ko": "이메일", "en": "Email"}, "value": "hy30nq@gmail.com", "description": {"ko": "가장 빠른 방법으로 문의를 처리합니다.", "en": "The fastest way to handle inquiries."}}, {"type": "link", "label": {"ko": "기술 블로그", "en": "Technical Blog"}, "href": "https://hyeonql.tistory.com/", "description": {"ko": "보안 관련 글을 정리합니다.", "en": "Posts about security."}}, {"type": "link", "label": {"ko": "GitHub", "en": "GitHub"}, "href": "https://github.com/hy30nq03", "description": {"ko": "소스코드를 공유합니다.", "en": "Source code."}}, {"type": "link", "label": {"ko": "Instagram", "en": "Instagram"}, "href": "https://www.instagram.com/hy30nq/", "description": {"ko": "일상을 공유합니다.", "en": "Share daily life."}}]}, "sections": {"languages": {"title": {"ko": "언어 역량", "en": "Languages"}, "description": {"ko": "언어 능력 기록입니다.", "en": "Language capabilities."}, "items": [{"title": {"ko": "한국어", "en": "Korean"}, "details": [{"ko": "모국어.", "en": "Native."}]}, {"title": {"ko": "영어", "en": "English"}, "details": [{"ko": "기본적인 읽기, 쓰기 가능합니다.", "en": "Proficient in reading and writing."}]}, {"title": {"ko": "중국어", "en": "Chinese"}, "details": [{"ko": "HSK 4급, HSKK 초급.", "en": "HSK Level 4, HSKK Elementary."}]}]}, "cve": {"title": {"ko": "CVE 발견", "en": "CVE Discovery"}, "description": {"ko": "발견한 CVE 내역입니다.", "en": "CVE discoveries."}, "items": [{"title": {"ko": "CVE-2024-11950 · XnSoft XnView Classic 정수 언더플로우", "en": "CVE-2024-11950 · XnSoft XnView Classic Integer Underflow"}, "meta": {"ko": "중대 심각도 · Remote Code Execution", "en": "High Severity · RCE"}, "body": {"ko": "특수 제작된 RWZ 파일로 정수 언더플로우를 유발해 원격 코드 실행이 가능한 취약점을 발견·보고했습니다.", "en": "Crafted RWZ files could trigger integer underflow leading to remote code execution. Reported via the Zero Day Initiative."}, "links": [{"label": {"ko": "ZDI 권고문", "en": "ZDI Advisory"}, "href": "https://www.zerodayinitiative.com/advisories/ZDI-24-1640/"}, {"label": {"ko": "CVE 기록", "en": "CVE Record"}, "href": "https://www.cve.org/CVERecord?id=CVE-2024-11950"}]}]}, "certifications": {"title": {"ko": "자격증", "en": "Verified expertise"}, "description": {"ko": "공식 자격 기록입니다.", "en": "Official certifications."}, "items": [{"title": {"ko": "정보처리기능사", "en": "Information Processing Craftsman"}, "meta": {"ko": "한국산업인력공단 · 2024", "en": "HRD Korea · 2024"}, "body": {"ko": "정보처리기능사 자격증을 취득했습니다.", "en": "Obtained the Information Processing Craftsman certification."}, "links": [{"label": {"ko": "자격 정보", "en": "Q-Net Credential Info"}, "href": "https://www.q-net.or.kr/man001.do?gSite=Q&gIntro=Y"}, {"label": {"ko": "수료증빙", "en": "Certificate Scan"}, "href": "assets/proof/정보처리기능사.pdf"}]}]}, "education": {"title": {"ko": "학력", "en": "Education"}, "description": {"ko": "학력 내역입니다.", "en": "Education history."}, "items": [{"title": {"ko": "학사 과정 · 개인정보보호융합전공", "en": "Bachelor’s Program · Privacy & Security Convergence"}, "meta": {"ko": "고려대학교 · 2024–현재", "en": "Korea University · 2024 – Present"}, "body": {"ko": "개인정보 법제, 보안 엔지니어링, 데이터 거버넌스를 중심으로 연구 활동을 수행하고 있습니다.", "en": "Conducting interdisciplinary research on privacy law, security engineering, and data governance."}, "links": [{"label": {"ko": "전공 소개", "en": "Program Overview"}, "href": "https://security.korea.ac.kr/bbs/page.php?hid=m03_03_01_1"}]}, {"title": {"ko": "학사 과정 · 인공지능사이버보안학과 23학번", "en": "Bachelor’s Program · AI Cybersecurity"}, "meta": {"ko": "고려대학교 · 2023", "en": "Korea University · Class of 2023"}, "body": {"ko": "기본적인 사이버보안과 AI에 대해 학습하는 중입니다.", "en": "Learning basic cybersecurity and AI."}, "links": [{"label": {"ko": "학교 홈페이지", "en": "Korea University"}, "href": "https://secu.korea.ac.kr/secu/index.do"}]}, {"title": {"ko": "합격 · 고려대학교 중어중문학과", "en": "Admission · Department of Chinese Language & Literature (2022)"}, "meta": {"ko": "고려대학교 · 2022", "en": "Korea University · 2022"}, "body": {"ko": "합격하였습니다.", "en": "Admitted."}, "links": [{"label": {"ko": "합격 증빙", "en": "Admission Letter"}, "href": "https://drive.google.com/file/d/11CysMOz4Jr1vUBlAqe-5F5Wn8asIySix/view?usp=sharing"}]}]}, "presentations": {"title": {"ko": "발표", "en": "Presentations"}, "description": {"ko": "발표한 내역입니다.", "en": "Presentations."}, "items": [{"title": {"ko": "정보보호 인재양성 교육사업 성과교류회", "en": "Information Security Talent Development Program Results Sharing Session"}, "meta": {"ko": "한국정보보호산업협회 · 2024", "en": "Korea Information Security Industry Association · 2024"}, "body": {"ko": "그 동안 교육과정과 해커톤 내에서 느낀점을 발표하고 기술에 대한 설명을 했습니다.", "en": "Presented the experiences and technical descriptions during the education process and hackathon."}, "links": [{"label": {"ko": "발표 자료", "en": "Slide Deck"}, "href": "assets/proof/2024_KISIA_성과공유회_발표.pdf"}, {"label": {"ko": "관련 글", "en": "Related Article"}, "href": "https://www.boannews.com/media/view.asp?idx=135259"}]}]}, "projects": {"title": {"ko": "프로젝트", "en": "Projects"}, "description": {"ko": "대학생 시절부터 현재까지 진행한 프로젝트 내역입니다.", "en": "Projects completed from university to present."}, "items": [{"title": {"ko": "빡공팟 레드팀 실습 환경 구축", "en": "BbakgongPot Red-Team Lab Deployment"}, "meta": {"ko": "2025.02.24 – 2025.06.22", "en": "Feb 24 – Jun 22, 2025"}, "body": {"ko": "빡공팟 커뮤니티 레드팀 스터디를 위해 Vagrant, Ansible, Docker 등을 활용해 실습 환경을 설계·자동화했습니다. 실전 침투 테스트 시나리오를 기반으로 다중 단계 공격 흐름과 방어 모듈을 추가해 팀 학습을 지원했습니다.", "en": "Designed and automated a red-team lab for the BbakgongPot community study group using Vagrant, Ansible, Docker, and custom tooling. Built multi-stage attack simulations and defensive modules to mirror real-world penetration tests."}, "links": []}, {"title": {"ko": "HSPACE 침투 테스트 교육 콘텐츠 개발", "en": "HSPACE Pentest Training Curriculum Development"}, "meta": {"ko": "쇼핑몰 컨텐츠 개발 · Knights of the SPACE · 2025.06.09 ~ 2025.07.30", "en": "Shopping Mall Content Development · Knights of the SPACE · Jun 9 – Jul 30, 2025"}, "body": {"ko": "침투 테스트를 처음 접하는 학생들도 따라올 수 있도록 가상의 쇼핑몰을 구축하여 난이도별로 자유롭게 실습을 해볼 수 있도록 시나리오를 구성했습니다.", "en": "Built a virtual shopping mall and configured tiered pentest scenarios so students could follow along."}, "links": [{"label": {"ko": "Knights of the SPACE", "en": "Knights of the SPACE"}, "href": "https://hspace.io/"}, {"label": {"ko": "깃허브 링크", "en": "GitHub Link"}, "href": "https://github.com/hspace-io/SPACE-PENTEST"}]}, {"title": {"ko": "실전 버그바운티 사례 기반 CTF 문제 제작", "en": "CTF Challenges based on real bug bounty cases development"}, "meta": {"ko": "플랫폼 벡엔드 개발 · 파인더갭 · 2025.06.09 ~ 2025.08.01", "en": "Platform Backend Development · FinderGap · Jun 9 ~ Aug 1, 2025"}, "body": {"ko": "플랫폼의 백엔드 전체를 다 구현했습니다.", "en": "Implemented the entire backend of the ctf platform."}, "links": [{"label": {"ko": "FinderGap", "en": "FinderGap"}, "href": "https://findthegap.co.kr/"}, {"label": {"ko": "수료증빙", "en": "Award Certificate"}, "href": "https://hy30nq.com/assets/proof/ctf-bugbounty-brief.pdf"}]}, {"title": {"ko": "Earth CTF 플랫폼", "en": "Earth CTF Platform"}, "meta": {"ko": "개발 · 고려대학교 인공지능사이버보안학과 · 2024", "en": "Developer · Korea Univ. AI Cybersecurity · 2024"}, "body": {"ko": "웹 개발 전반적 과정에 다 참여하였습니다.", "en": "Participated in the entire web development process."}, "links": [{"label": {"ko": "GitHub 저장소", "en": "GitHub Repo"}, "href": "https://github.com/hy30nq/earth-ctf-site"}]}, {"title": {"ko": "WordPress 플러그인 취약점 분석", "en": "WordPress Plugin Vulnerability Analysis"}, "meta": {"ko": "개발 · 고려대학교 인공지능사이버보안학과 · 2024", "en": "Developer · Korea Univ. AI Cybersecurity · 2024"}, "body": {"ko": "학교 학술제에서 발표하기 위해 자동 탐지 도구를 제작했습니다. 그 중 sqli 부분을 맡아서 제작을 진행하였습니다.", "en": "Created an automated detection tool for the departmental symposium, focusing on SQLi implementation."}, "links": [{"label": {"ko": "학술제 사이트", "en": "Research Site"}, "href": "https://secu.korea.ac.kr/secu/5393/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc2VjdSUyRjE3MyUyRjI1NTMwMyUyRmFydGNsVmlldy5kbyUzRnBhZ2UlM0QxJTI2ZmluZFR5cGUlM0RzaiUyNmZpbmRXb3JkJTNEJUVEJTk1JTk5JUVDJTg4JUEwJUVDJUEwJTlDJTI2ZmluZENsU2VxJTNEJTI2ZmluZE9wbndyZCUzRCUyNnJnc0JnbmRlU3RyJTNEJTI2cmdzRW5kZGVTdHIlM0QlMjZwYXNzd29yZCUzRCUyNg%3D%3D"}]}, {"title": {"ko": "AI 기반 악성 URL 분류기", "en": "AI-powered Malicious URL Checker"}, "meta": {"ko": "프론트엔드, 데이터 전처리 · KISIA AI 보안 네트워크 · 2024", "en": "Frontend, Data Preprocessing · KISIA AI Security Network · 2024"}, "body": {"ko": "피싱 URL 데이터를 정제하고 모델 학습 파이프라인을 구축했습니다.", "en": "Cleaned phishing datasets and built the training pipeline."}, "links": [{"label": {"ko": "GitHub 저장소", "en": "GitHub Repo"}, "href": "https://github.com/racheliee/kisia-project"}, {"label": {"ko": "시연 자료", "en": "Demo Slides"}, "href": "https://drive.google.com/file/d/11uldY1oqZdwyKIOcpvntjKv60Rvu_ZnG/view?usp=sharing"}]}, {"title": {"ko": "LAMP 스택 취약 실습 환경", "en": "LAMP Stack Vulnerable Lab"}, "meta": {"ko": "개발 · KnockOn bootcamp 1st · 2024", "en": "Developer · KnockOn Bootcamp 1st · 2024"}, "body": {"ko": "의도적으로 취약한 웹 사이트를 구축하고 웹 사이트 실제 취약점 분석을 통해 취약점 패치를 진행했습니다.", "en": "Built an intentionally vulnerable web site and patched the vulnerabilities through actual web site vulnerability analysis."}, "links": [{"label": {"ko": "GitHub 저장소", "en": "GitHub Repo"}, "href": "https://github.com/hy30nq/myWebsiteWithKnock"}]}]}, "scholarships": {"title": {"ko": "장학금", "en": "Scholarships"}, "description": {"ko": "장학금 내역입니다.", "en": "Scholarship history."}, "items": [{"title": {"ko": "KUPC 장학금", "en": "KUPC Scholarship"}, "meta": {"ko": "고려대학교 · 연도 기재", "en": "Korea University · Award Year"}, "body": {"ko": "KU PRIDE CLUB 장학금을 수혜했습니다.", "en": "Received the KU PRIDE CLUB Scholarship."}}, {"title": {"ko": "수곡장학회 장학금", "en": "Sugok Scholarship"}, "meta": {"ko": "수곡장학회 · 2024, 2025", "en": "Sugok Scholarship Foundation · 2024, 2025"}, "body": {"ko": "남원 지역 장학금을 수혜했습니다.", "en": "Received the Namwon Region Scholarship."}}, {"title": {"ko": "푸른등대 기부장학금(알리바바 코리아)", "en": "Blue Lighthouse Donation Scholarship (Alibaba Korea)"}, "meta": {"ko": "한국장학재단 · 2025", "en": "Korea Scholarship Foundation & Alibaba Korea · 2025"}, "body": {"ko": "알리바바 코리아 기부장학금을 수혜했습니다.", "en": "Received the Alibaba Korea Donation Scholarship."}}, {"title": {"ko": "재경남원향우회 장학금", "en": "Namwon Alumni Scholarship"}, "meta": {"ko": "재경남원향우회 · 2024", "en": "Namwon Alumni Association · 2024"}, "body": {"ko": "재경남원향우회 장학금을 수혜했습니다.", "en": "Received the Namwon Alumni Scholarship."}}, {"title": {"ko": "고려대학교 등록금 전액 장학금", "en": "Full Tuition Scholarship"}, "meta": {"ko": "고려대학교 · 2023, 2024, 2025", "en": "Korea University · 2023, 2024, 2025"}, "body": {"ko": "등록금 전액 장학금을 수혜했습니다.", "en": "Received the Full Tuition Scholarship."}}]}, "awards": {"title": {"ko": "주요 수상 실적", "en": "Major Awards"}, "description": {"ko": "대학생 시절부터 현재까지 받은 수상 내역입니다.", "en": "Awards received from university to present."}, "items": [{"title": {"ko": "장려상 · 2024 제2회 개인정보보호/보안 정책 아이디어 공모전", "en": "Encouragement Prize · 2024 2nd Personal Information Protection & Security Policy Idea Contest"}, "meta": {"ko": "고려대학교 정보보호대학원 · 2025.02.07", "en": "Korea University School of Cybersecurity · Feb 7, 2025"}, "body": {"ko": "수상작: 개인정보 익명화 인증 제도 도입을 통한 데이터 활용과 개인정보보호의 균형 정책 제안", "en": "Awarded work: Policy proposal for balancing data utilization and personal information protection through the introduction of an anonymity certification system."}, "links": [{"label": {"ko": "공모전 안내", "en": "Contest Overview"}, "href": "https://security.korea.ac.kr/m06_04/59"}, {"label": {"ko": "수상 증빙", "en": "Award Certificate"}, "href": "https://scontent-icn2-1.cdninstagram.com/v/t51.75761-15/482512303_17960458811903290_8218111823393089566_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=MzU4MDY4MzU4NTQ2NTM4NTczOQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzB4MjA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=S74fOuE4xzMQ7kNvwGByzG-&_nc_oc=AdkJNd9fkrD0NHlEfd1pzD44D56I3RAQfgAms5xRZaHlOoiEy38kZCLqODyNoSdmU6g&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=98QCQKIGIId_COfsUMdAmQ&oh=00_AffKuU_tst3NchS0XnQRY-tPxf52MfFEnlhpl_Y3kYz1tA&oe=68FD2B8D"}]}, {"title": {"ko": "우수상 (한국정보보호산업협회장상) · AI 보안 기술개발 참여수기 공모전", "en": "Excellence Award (Korea Information Security Industry Association Chairman) · AI Security Technology Development Essay Contest"}, "meta": {"ko": "한국정보보호산업협회 · 2024.12.20", "en": "Korea Information Security Industry Association · Dec 20, 2024"}, "body": {"ko": "AI보안 기술개발 과정에서 얻은 경험과 후기를 작성하여 제출했습니다.", "en": "Submitted an essay documenting AI security technology development experiences and reflections."}, "links": [{"label": {"ko": "원문 보기", "en": "Essay View"}, "href": "https://blog.naver.com/kisiaedu/223785868393"}, {"label": {"ko": "수상 증빙", "en": "Award Certificate"}, "href": "https://scontent-icn2-1.cdninstagram.com/v/t51.75761-15/470982838_17951481521903290_1591343838321866581_n.jpg?stp=dst-jpg_e35_p1080x1080_tt6&_nc_cat=107&ig_cache_key=MzUyNzEwNjI3NzA2MDQzNDY1NA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTgwMC5zZHIuQzMifQ%3D%3D&_nc_ohc=8TMrDweqHhUQ7kNvwGcOkcP&_nc_oc=AdnbjeSUh3PYoY5iBAQdyV-TRaYE2R9fryDoQHj9MtzrYAyhlFd4XddebEYFAI4y5aE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=vcQ4qEY-d8r0sJmXPh_r-A&oh=00_Afe3Ot7DGLLi6m6MmnB7WQqMRqYF5b2oIJ2ndth5rB4hcg&oe=68FD417F"}]}, {"title": {"ko": "최우수 수료생 (개인) (과학기술정보통신부 장관상) · KISIA AI보안 기술개발 교육과정", "en": "Top Graduate (Individual) (Minister of Science and ICT) · KISIA AI Security Technology Development Program"}, "meta": {"ko": "과학기술정보통신부 · 2024.12.20", "en": "Ministry of Science and ICT · Dec 20, 2024"}, "body": {"ko": "강의, 실습, 프로젝트 평가 전 영역에서 최고 성적을 기록했습니다.", "en": "Achieved the highest individual performance score across coursework, labs, and applied security projects."}, "links": [{"label": {"ko": "프로그램 개요", "en": "Program Overview"}, "href": "https://www.kisia.or.kr/talent_support/education_business/ai_security_technology_development/"}, {"label": {"ko": "시상 내역", "en": "Award Certificate"}, "href": "https://scontent-icn2-1.cdninstagram.com/v/t51.75761-15/470971040_17951481512903290_2065389978490177342_n.jpg?stp=dst-jpg_e35_p720x720_tt6&_nc_cat=111&ig_cache_key=MzUyNzEwNjI3Njg1MDcwNTMxOQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTgwMC5zZHIuQzMifQ%3D%3D&_nc_ohc=nye1goEq-u8Q7kNvwFb6krL&_nc_oc=AdmqMFbMbTWZq-7D775JTcibHE1foEMcvcK8Nf3QXVqPC1Y1aNCANtZ3KAg-hbF8dn8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=vcQ4qEY-d8r0sJmXPh_r-A&oh=00_AfezVI0q5DxuUCDRKEjbhCzulfMYOZb2eCZHT2f6l2c4Fg&oe=68FD2D13"}]}, {"title": {"ko": "최우수상 (1등) (과학기술정보통신부 장관상) · 2024 제2회 KISIA 정보보호 개발자 해커톤", "en": "Grand Prize (1st Place) (Minister of Science and ICT) · 2024 2nd KISIA Information Security Developer Hackathon"}, "meta": {"ko": "과학기술정보통신부 · 2024.08.21", "en": "Ministry of Science and ICT · Aug 21, 2024"}, "body": {"ko": "일상 생활에서의 정보보호라는 주제로 크롬 익스텐션 기반 악성 URL 탐지 서비스를 개발해 1등을 차지했습니다.", "en": "Developed an AI-driven threat detection project that secured first place among national finalist teams."}, "links": [{"label": {"ko": "뉴스 기사", "en": "News Coverage"}, "href": "https://news.naver.com/main/read.naver?mode=LSD&mid=sec&sid1=102&oid=032&aid=0005326020"}, {"label": {"ko": "시상 사진", "en": "Award Photo"}, "href": "https://scontent-icn2-1.cdninstagram.com/v/t51.75761-15/470900163_17951481500903290_4082736277566649892_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=MzUyNzEwNjI3Njg0MjQ4MjE5OQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTgwMC5zZHIuQzMifQ%3D%3D&_nc_ohc=TJy0R_rOKRoQ7kNvwEn44cT&_nc_oc=AdkDyvlfWbCuTcMdyhqZLjT32yDW3UGvBrmlAto0p8Ufj0Qic3RQJqA6Ky9pss_5L9Q&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=vcQ4qEY-d8r0sJmXPh_r-A&oh=00_AfeIrxtj1H2mgqXw6ZzX9LkltJ2ME2n8r0_HOQZ8sEdciw&oe=68FD37A3"}]}, {"title": {"ko": "우승 (1등) · 제29회 하계 해킹캠프 CTF (Team 고민중독)", "en": "Champion (1st Place) · 29th Summer Hacking Camp CTF (Team 고민중독)"}, "meta": {"ko": "POC Security · 2024.08.18", "en": "POC Security · Aug 18, 2024"}, "body": {"ko": "당일 팀 구성을 통해 CTF 우승을 했습니다.", "en": "Won the CTF by forming a team on the day."}, "links": [{"label": {"ko": "해킹캠프", "en": "Hacking Camp"}, "href": "https://hackingcamp.org/"}, {"label": {"ko": "우승 증빙", "en": "Award Certificate"}, "href": "https://scontent-icn2-1.cdninstagram.com/v/t39.30808-6/456133135_17935597445903290_3978241598401644293_n.jpg?stp=dst-jpegr_e35_tt6&_nc_cat=108&ig_cache_key=MzQzNzQyNTU2MDE2MTA0NDkxNA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTA4MC5oZHIuQzMifQ%3D%3D&_nc_ohc=GP6Ifp1zNgoQ7kNvwGfg3Xi&_nc_oc=AdksJg6t91F18dXtPCW0lkNNcZBj_kHc4_FQ5Hi5amCNPPC-lut1Z98CMY-HLtaJowU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=vcQ4qEY-d8r0sJmXPh_r-A&oh=00_AffIXAJL5Iftw6g5ut46aKGRK62eMw9qIE1nyCezHFb4ZA&oe=68FD17DB"}]}, {"title": {"ko": "TOP 20 (과학기술정보통신부 장관 인증서) · KITRI 차세대 보안리더 양성프로그램 화이트햇 스쿨 (Pre-BoB) 1기", "en": "Top 20 (Minister of Science and ICT Certification) · KITRI Next-Generation Security Leader Training Program WhiteHat School (Pre-BoB) Cohort 1"}, "meta": {"ko": "과학기술정보통신부 · 2024.03.22", "en": "Ministry of Science and ICT · Mar 22, 2024"}, "body": {"ko": "320명 가운데 상위 20인에 선정되어 장관 인증서를 수여받았습니다.", "en": "Ranked in the Top 20 out of 320 participants and received a certificate of recognition from the Minister of Science and ICT."}, "links": [{"label": {"ko": "관련 글", "en": "Related Article"}, "href": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=113&mPid=238&bbsSeqNo=94&nttSeqNo=3184227"}, {"label": {"ko": "수상 증빙", "en": "Award Certificate"}, "href": "https://scontent-icn2-1.cdninstagram.com/v/t51.29350-15/434164349_974181463575813_745148474164522539_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTA4MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QHMrW9s9deDOnMSIHkwj9yCXor3OZ96mYR0QmSDzfWuUm8T9ZZGTZ8CLabXu9IL93M&_nc_ohc=PHZtpB9btJwQ7kNvwFviyKp&_nc_gid=vcQ4qEY-d8r0sJmXPh_r-A&edm=AP4sbd4BAAAA&ccb=7-5&ig_cache_key=MzMyOTM2Nzc0MDcxOTY1NTIwNg%3D%3D.3-ccb7-5&oh=00_AfcstvxcL8Xr8fNJ6bU7308m7Ur6jAiqGe6Pfz94-aQwfQ&oe=68FD37CC&_nc_sid=7a9f4b"}]}]}}, "timeline": {"training": {"title": {"ko": "교육 및 연수 내역", "en": "Training & Fellowships"}, "description": {"ko": "참여한 교육, 연수, 부트캠프 프로그램입니다.", "en": "Formal training programs, bootcamps, and fellowships I've completed."}, "groups": [{"title": {"ko": "2025년 프로그램", "en": "2025 Programs"}, "items": [{"title": {"ko": "BusinessH4C Red Team Elite 3", "en": "BusinessH4C Red Team Elite 3"}, "details": {"ko": "BusinessH4C · 2025.02.24 – 2025.06.22 · SSH 터널링, 권한 상승, 침해 후 활동 등 레드팀 전술 실습", "en": "BusinessH4C · Feb 24 – Jun 22, 2025 · Hands-on red teaming (SSH tunneling, privilege escalation, post-exploitation)."}, "links": [{"label": {"ko": "프로그램 소개", "en": "Program Overview"}, "href": "https://h4c.biz/"}, {"label": {"ko": "수료 증빙", "en": "Completion Proof"}, "href": "assets/proof/redteam.pdf"}]}, {"title": {"ko": "KISA 버그헌팅 실습 훈련 (초급)", "en": "KISA Bug Hunting Practice Training (Beginner)"}, "details": {"ko": "한국인터넷진흥원 · 2025.03.04 – 2025.03.15 · 웹/모바일 취약점 분석 실습", "en": "Korea Internet & Security Agency · Mar 4 – Mar 15, 2025 · Practical bug hunting labs."}, "links": [{"label": {"ko": "프로그램 안내", "en": "Program Site"}, "href": "https://www.kisa.or.kr/"}, {"label": {"ko": "수료 증빙", "en": "Completion Proof"}, "href": "assets/proof/kisa_bugbounty_initial.pdf"}]}, {"title": {"ko": "KISIA ICT 융합 산업보안 인력양성사업 (AI 보안)", "en": "KISIA ICT Convergence Security Talent Program (AI Security)"}, "details": {"ko": "한국정보보호교육원 · 2025.06.24 – 2025.06.26 · AI 보안 기초 및 프로젝트", "en": "Korea Information Security Academy · Jun 24 – Jun 26, 2025 · AI security fundamentals & project work."}, "links": [{"label": {"ko": "과정 소개", "en": "Course Overview"}, "href": "https://www.kisia.or.kr/talent_support/education_business/ict_convergence_industry_security/"}, {"label": {"ko": "수료 증빙", "en": "Completion Proof"}, "href": "assets/proof/수료증_융합보안(AI보안)_이현규.pdf"}]}, {"title": {"ko": "고려대학교 개인정보보호융합전공 싱가포르 연수", "en": "KU Privacy Protection Singapore Study Tour"}, "details": {"ko": "고려대학교 · 2025.01.12 – 2025.01.16 · 현지 개인정보보호 기관 방문 및 워크숍", "en": "Korea University · Jan 12 – Jan 16, 2025 · Field study visiting Singaporean privacy regulators."}, "links": []}, {"title": {"ko": "한국장학재단 알리바바 중국 본사 견학", "en": "Korea Scholarship Foundation · Alibaba HQ Training"}, "details": {"ko": "한국장학재단 · 2025.07.28 – 2025.08.01 · AI 산업 및 보안 전략 체험", "en": "Korea Scholarship Foundation · Jul 28 – Aug 1, 2025 · AI industry & security strategy immersion."}, "links": []}]}, {"title": {"ko": "2024년 프로그램", "en": "2024 Programs"}, "items": [{"title": {"ko": "KISIA AI 보안 기술개발 네트워크반", "en": "KISIA AI Security Technology Development Network"}, "details": {"ko": "KISIA · 2024.07.08 – 2024.10.25 · AI 기반 보안 프로젝트 실습", "en": "KISIA · Jul 8 – Oct 25, 2024 · AI security foundations and applied project."}, "links": [{"label": {"ko": "프로그램 안내", "en": "Program Site"}, "href": "https://www.kisia.or.kr/talent_support/education_business/ai_security_technology_development/"}, {"label": {"ko": "수료 증빙", "en": "Completion Proof"}, "href": "assets/proof/kisia_certificate.png"}]}, {"title": {"ko": "KISIA ICT 융합 산업보안 인력양성사업 (블록체인 기초)", "en": "KISIA ICT Convergence Security Talent Program (Blockchain)"}, "details": {"ko": "KISIA · 2024.09.04 – 2024.09.06 · 블록체인 보안 기초", "en": "KISIA · Sep 4 – Sep 6, 2024 · Blockchain security fundamentals."}, "links": [{"label": {"ko": "커리큘럼", "en": "Curriculum"}, "href": "https://www.kisia.or.kr/talent_support/education_business/ict_convergence_industry_security/"}, {"label": {"ko": "수료 증빙", "en": "Completion Proof"}, "href": "assets/proof/수료증_융합보안(블록체인)_이현규.pdf"}]}, {"title": {"ko": "KnockOn Elite Whitehacker Bootcamp 1st", "en": "KnockOn Elite Whitehacker Bootcamp 1st"}, "details": {"ko": "KnockOn · 2024.02.17 – 2024.05.30 · 웹 취약점 분석 집중 과정", "en": "KnockOn · Feb 17 – May 30, 2024 · Intensive web vulnerability bootcamp."}, "links": [{"label": {"ko": "부트캠프 안내", "en": "Bootcamp"}, "href": "https://www.knock-on.org/"}, {"label": {"ko": "Top 7 증빙", "en": "Top 7 Certificate"}, "href": "assets/proof/knockon.png"}]}]}, {"title": {"ko": "2023년 프로그램", "en": "2023 Programs"}, "items": [{"title": {"ko": "KITRI 화이트햇 스쿨 (Pre-BoB) 1기", "en": "KITRI WhiteHat School (Pre-BoB) 1st Cohort"}, "details": {"ko": "KITRI · 2023.09.01 – 2024.03.22 · 보안 기초 및 실습", "en": "KITRI · Sep 1, 2023 – Mar 22, 2024 · Comprehensive security training."}, "links": [{"label": {"ko": "프로그램 안내", "en": "Program Site"}, "href": "https://whitehatschool.kr/home/kor/main.do"}, {"label": {"ko": "수료 증빙", "en": "Completion Proof"}, "href": "assets/proof/whitehat.png"}]}, {"title": {"ko": "KIRD 사이버보안 하계 직무연계 교육", "en": "KIRD Cybersecurity Summer Course"}, "details": {"ko": "KIRD · 2023.08.16 – 2023.08.18 · 사이버보안 생태계 기초", "en": "KIRD · Aug 16 – Aug 18, 2023 · Fundamentals of the cyber-security ecosystem."}, "links": [{"label": {"ko": "프로그램 안내", "en": "Program Overview"}, "href": "https://alpha-campus.kr/"}, {"label": {"ko": "수료 증빙", "en": "Completion Proof"}, "href": "assets/proof/사이버보안 하계 직무연계 교육과정(통합교육)_20251027.pdf"}]}, {"title": {"ko": "Start-Up K-Shield Jr.", "en": "Start-Up K-Shield Jr."}, "details": {"ko": "한국정보보호교육센터 · 2023.07.01 – 2023.07.31 · 보안 및 리눅스 기초", "en": "KISEC · Jul 1 – Jul 31, 2023 · Introductory security & Linux training."}, "links": [{"label": {"ko": "프로그램 안내", "en": "Program Site"}, "href": "https://www.kisec.com/"}, {"label": {"ko": "수료 증빙", "en": "Completion Proof"}, "href": "assets/proof/[수료증] Start-Up K-Shield Jr_이현규.pdf"}]}]}]}, "activities": {"title": {"ko": "공개 활동", "en": "Public Activities"}, "description": {"ko": "공개로 공유 가능한 활동입니다.", "en": "Activities that can be shared publicly."}, "public": {"title": {"ko": "공개 활동", "en": "Public Activities"}, "description": {"ko": "공개로 공유 가능한 활동입니다.", "en": "Activities that can be shared publicly."}, "groups": [{"title": {"ko": "2025년", "en": "2025"}, "items": [{"title": {"ko": "SSD CTF 문제 출제", "en": "SSD CTF"}, "details": {"ko": "2025.08.29 – 2025.08.30 · CTF 문제 출제", "en": "Aug 29 – Aug 30, 2025 · Authored CTF challenges"}, "links": []}, {"title": {"ko": "XKSW 연합 세미나 CTF 문제 검수", "en": "XKSW Joint Seminar"}, "details": {"ko": "2025.08.25 – 2025.08.26 · CTF 문제 검수", "en": "Aug 25 – Aug 26, 2025 · Reviewed CTF challenges"}, "links": []}, {"title": {"ko": "한국정보기술연구원(KITRI) 화이트햇 스쿨 3기 3단계 조교", "en": "KITRI WhiteHat School 3rd Cohort Stage 3 TA"}, "details": {"ko": "2025.08.06 – 2025.08.30 · 화이트햇 스쿨 3단계 조교", "en": "Aug 6 – Aug 30, 2025 · Teaching assistant for Stage 3"}, "links": []}, {"title": {"ko": "APEX 2025 테스트런", "en": "APEX 2025 Testrun"}, "details": {"ko": "2025.08.07 · 사이버서밋 2025 테스트런 참가", "en": "Aug 7, 2025 · Participated in Cyber Summit 2025 testrun"}, "links": []}, {"title": {"ko": "한국정보기술연구원(KITRI) 화이트햇 스쿨 3기 중간발표 조교", "en": "KITRI WhiteHat School 3rd Cohort Midterm TA"}, "details": {"ko": "2025.06.28 · 화이트햇 스쿨 3기 중간발표 조교", "en": "Jun 28, 2025 · Teaching assistant for midterm presentation"}, "links": []}, {"title": {"ko": "한국정보기술연구원(KITRI) 화이트햇 스쿨 3기 1단계 조교", "en": "KITRI WhiteHat School 3rd Cohort Stage 1 TA"}, "details": {"ko": "2025.03 – 2025.05 · 화이트햇 스쿨 3기 1단계 조교", "en": "Mar 2025 – May 2025 · Teaching assistant for Stage 1"}, "links": []}, {"title": {"ko": "POC Security 30회 동계 해킹캠프", "en": "POC Security 30th Winter Hacking Camp"}, "details": {"ko": "2025.02.15 – 2025.02.16 · 참가자", "en": "Feb 15 – Feb 16, 2025 · Participant"}, "links": []}, {"title": {"ko": "화이트햇콘테스트 2025 예선, 본선 진출 (5위)", "en": "WhiteHat Contest 2025 Qualifier, Finals (5th place)"}, "details": {"ko": "2025.10.18 · 화이트햇콘테스트 예선 5위, 본선 진출", "en": "Oct 18, 2025 · Placed 5th in the WhiteHat Contest preliminaries and advanced to finals"}, "links": [{"label": {"ko": "화이트햇콘테스트", "en": "WhiteHat Contest Overview"}, "href": "https://whitehatcontest.kr/"}]}, {"title": {"ko": "BlackHat MEA 2025 예선, 본선 진출 (41위)", "en": "BlackHat MEA 2025 Qualifier, Finals (41st place)"}, "details": {"ko": "2025.09.07 – 2025.09.08 · 예선 41위, 본선 진출 (24시간 온라인 CTF)", "en": "Sep 7 – Sep 8, 2025 · Placed 41st in the 24-hour online CTF and advanced to finals"}, "links": [{"label": {"ko": "BlackHat MEA 공식 사이트", "en": "BlackHat MEA Official Site"}, "href": "https://www.blackhatmea.com/"}]}]}, {"title": {"ko": "2024년", "en": "2024"}, "items": [{"title": {"ko": "kakao · goorm 구름톤 유니브 3기", "en": "kakao · goorm Goormthon Univ. 3rd Cohort"}, "details": {"ko": "2024.09 – 2025.01 · 프로젝트 PM", "en": "Sep 2024 – Jan 2025 · Project PM"}, "links": []}, {"title": {"ko": "한국정보기술연구원(KITRI) 화이트햇 스쿨 서포터즈", "en": "KITRI WhiteHat School Supporters"}, "details": {"ko": "2024.11.18 – 2024.12.27 · 서포터즈", "en": "Nov 18 – Dec 27, 2024 · Supporter"}, "links": []}, {"title": {"ko": "과학기술정보통신부 · 한국인터넷진흥원(KISA) 2024 블록체인 누리단", "en": "MSIT · KISA 2024 Blockchain Nuri-dan"}, "details": {"ko": "2024.07 – 2024.12 · 참가자", "en": "Jul 2024 – Dec 2024 · Participant"}, "links": []}, {"title": {"ko": "KnockOn Q&A 멘토", "en": "KnockOn Q&A Mentor"}, "details": {"ko": "2024.06 – 현재 · 멘토", "en": "Jun 2024 – Present · Mentor"}, "links": []}, {"title": {"ko": "개인정보보호위원회 · 한국인터넷진흥원(KISA) 개인정보 불법유통 대응 대학생 모니터링단", "en": "PIPC · KISA Illegal Personal Data Distribution Monitoring Corps"}, "details": {"ko": "2024.07.22 – 2024.12.03 · 모니터링 담당", "en": "Jul 22 – Dec 3, 2024 · Monitoring officer"}, "links": []}, {"title": {"ko": "중부정보보호지원센터 웹 취약점 점검 실습", "en": "Central Information Security Support Center Web Vulnerability Lab"}, "details": {"ko": "2024.10.08 · 실습 담당", "en": "Oct 8, 2024 · Lab facilitator"}, "links": []}, {"title": {"ko": "POC Security 29회 하계 해킹캠프", "en": "POC Security 29th Summer Hacking Camp"}, "details": {"ko": "2024.08.17 – 2024.08.18 · 참가자", "en": "Aug 17 – Aug 18, 2024 · Participant"}, "links": []}, {"title": {"ko": "코멘토 진로부트캠프", "en": "Comento Career Bootcamp"}, "details": {"ko": "2024.05.09 – 2024.06.30 · 정보보안 / 개인정보보호 실무 체험", "en": "May 9 – Jun 30, 2024 · Hands-on experience in security & privacy"}, "links": []}]}]}, "private": {"title": {"ko": "공개 불가 활동", "en": "Private Activities"}, "description": {"ko": "비밀번호 인증 후 열람 가능합니다.", "en": "Visible after additional authentication."}, "groups": [{"title": {"ko": "2025년", "en": "2025"}, "items": [{"title": {"ko": "포카전 해킹 종목 운영", "en": "POKA Intercollegiate Festival - Hacking Event"}, "details": {"ko": "2025.09.19 – 2025.09.20 · 해킹 종목 운영", "en": "Sep 19 – Sep 20, 2025 · Managed the hacking event"}, "links": []}, {"title": {"ko": "[**secret**] 취약점 분석", "en": "Vulnerability Analysis for [**secret**]"}, "details": {"ko": "[**secret**] 취약점 분석", "en": "Vulnerability Analysis for [**secret**]"}, "links": []}]}]}}}}</script>
+    <script type="module" src="assets/js/app.js"></script>
   </body>
 </html>

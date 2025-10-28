@@ -1,0 +1,81 @@
+{
+  "title": {
+    "ko": "학력",
+    "en": "Education"
+  },
+  "description": {
+    "ko": "학력 내역입니다.",
+    "en": "Education history."
+  },
+  "items": [
+    {
+      "title": {
+        "ko": "학사 과정 · 개인정보보호융합전공",
+        "en": "Bachelor’s Program · Privacy & Security Convergence"
+      },
+      "meta": {
+        "ko": "고려대학교 · 2024–현재",
+        "en": "Korea University · 2024 – Present"
+      },
+      "body": {
+        "ko": "개인정보 법제, 보안 엔지니어링, 데이터 거버넌스를 중심으로 연구 활동을 수행하고 있습니다.",
+        "en": "Conducting interdisciplinary research on privacy law, security engineering, and data governance."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "전공 소개",
+            "en": "Program Overview"
+          },
+          "href": "https://security.korea.ac.kr/bbs/page.php?hid=m03_03_01_1"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "학사 과정 · 인공지능사이버보안학과 23학번",
+        "en": "Bachelor’s Program · AI Cybersecurity"
+      },
+      "meta": {
+        "ko": "고려대학교 · 2023",
+        "en": "Korea University · Class of 2023"
+      },
+      "body": {
+        "ko": "기본적인 사이버보안과 AI에 대해 학습하는 중입니다.",
+        "en": "Learning basic cybersecurity and AI."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "학교 홈페이지",
+            "en": "Korea University"
+          },
+          "href": "https://secu.korea.ac.kr/secu/index.do"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "합격 · 고려대학교 중어중문학과",
+        "en": "Admission · Department of Chinese Language & Literature (2022)"
+      },
+      "meta": {
+        "ko": "고려대학교 · 2022",
+        "en": "Korea University · 2022"
+      },
+      "body": {
+        "ko": "합격하였습니다.",
+        "en": "Admitted."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "합격 증빙",
+            "en": "Admission Letter"
+          },
+          "href": "https://drive.google.com/file/d/11CysMOz4Jr1vUBlAqe-5F5Wn8asIySix/view?usp=sharing"
+        }
+      ]
+    }
+  ]
+}

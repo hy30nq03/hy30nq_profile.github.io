@@ -1,0 +1,292 @@
+{
+  "title": {
+    "ko": "교육 및 연수 내역",
+    "en": "Training & Fellowships"
+  },
+  "description": {
+    "ko": "참여한 교육, 연수, 부트캠프 프로그램입니다.",
+    "en": "Formal training programs, bootcamps, and fellowships I've completed."
+  },
+  "groups": [
+    {
+      "title": {
+        "ko": "2025년 프로그램",
+        "en": "2025 Programs"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "BusinessH4C Red Team Elite 3",
+            "en": "BusinessH4C Red Team Elite 3"
+          },
+          "details": {
+            "ko": "BusinessH4C · 2025.02.24 – 2025.06.22 · SSH 터널링, 권한 상승, 침해 후 활동 등 레드팀 전술 실습",
+            "en": "BusinessH4C · Feb 24 – Jun 22, 2025 · Hands-on red teaming (SSH tunneling, privilege escalation, post-exploitation)."
+          },
+          "links": [
+            {
+              "label": {
+                "ko": "프로그램 소개",
+                "en": "Program Overview"
+              },
+              "href": "https://h4c.biz/"
+            },
+            {
+              "label": {
+                "ko": "수료 증빙",
+                "en": "Completion Proof"
+              },
+              "href": "assets/proof/redteam.pdf"
+            }
+          ]
+        },
+        {
+          "title": {
+            "ko": "KISA 버그헌팅 실습 훈련 (초급)",
+            "en": "KISA Bug Hunting Practice Training (Beginner)"
+          },
+          "details": {
+            "ko": "한국인터넷진흥원 · 2025.03.04 – 2025.03.15 · 웹/모바일 취약점 분석 실습",
+            "en": "Korea Internet & Security Agency · Mar 4 – Mar 15, 2025 · Practical bug hunting labs."
+          },
+          "links": [
+            {
+              "label": {
+                "ko": "프로그램 안내",
+                "en": "Program Site"
+              },
+              "href": "https://www.kisa.or.kr/"
+            },
+            {
+              "label": {
+                "ko": "수료 증빙",
+                "en": "Completion Proof"
+              },
+              "href": "assets/proof/kisa_bugbounty_initial.pdf"
+            }
+          ]
+        },
+        {
+          "title": {
+            "ko": "KISIA ICT 융합 산업보안 인력양성사업 (AI 보안)",
+            "en": "KISIA ICT Convergence Security Talent Program (AI Security)"
+          },
+          "details": {
+            "ko": "한국정보보호교육원 · 2025.06.24 – 2025.06.26 · AI 보안 기초 및 프로젝트",
+            "en": "Korea Information Security Academy · Jun 24 – Jun 26, 2025 · AI security fundamentals & project work."
+          },
+          "links": [
+            {
+              "label": {
+                "ko": "과정 소개",
+                "en": "Course Overview"
+              },
+              "href": "https://www.kisia.or.kr/talent_support/education_business/ict_convergence_industry_security/"
+            },
+            {
+              "label": {
+                "ko": "수료 증빙",
+                "en": "Completion Proof"
+              },
+              "href": "assets/proof/수료증_융합보안(AI보안)_이현규.pdf"
+            }
+          ]
+        },
+        {
+          "title": {
+            "ko": "고려대학교 개인정보보호융합전공 싱가포르 연수",
+            "en": "KU Privacy Protection Singapore Study Tour"
+          },
+          "details": {
+            "ko": "고려대학교 · 2025.01.12 – 2025.01.16 · 현지 개인정보보호 기관 방문 및 워크숍",
+            "en": "Korea University · Jan 12 – Jan 16, 2025 · Field study visiting Singaporean privacy regulators."
+          },
+          "links": []
+        },
+        {
+          "title": {
+            "ko": "한국장학재단 알리바바 중국 본사 견학",
+            "en": "Korea Scholarship Foundation · Alibaba HQ Training"
+          },
+          "details": {
+            "ko": "한국장학재단 · 2025.07.28 – 2025.08.01 · AI 산업 및 보안 전략 체험",
+            "en": "Korea Scholarship Foundation · Jul 28 – Aug 1, 2025 · AI industry & security strategy immersion."
+          },
+          "links": []
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "2024년 프로그램",
+        "en": "2024 Programs"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "KISIA AI 보안 기술개발 네트워크반",
+            "en": "KISIA AI Security Technology Development Network"
+          },
+          "details": {
+            "ko": "KISIA · 2024.07.08 – 2024.10.25 · AI 기반 보안 프로젝트 실습",
+            "en": "KISIA · Jul 8 – Oct 25, 2024 · AI security foundations and applied project."
+          },
+          "links": [
+            {
+              "label": {
+                "ko": "프로그램 안내",
+                "en": "Program Site"
+              },
+              "href": "https://www.kisia.or.kr/talent_support/education_business/ai_security_technology_development/"
+            },
+            {
+              "label": {
+                "ko": "수료 증빙",
+                "en": "Completion Proof"
+              },
+              "href": "assets/proof/kisia_certificate.png"
+            }
+          ]
+        },
+        {
+          "title": {
+            "ko": "KISIA ICT 융합 산업보안 인력양성사업 (블록체인 기초)",
+            "en": "KISIA ICT Convergence Security Talent Program (Blockchain)"
+          },
+          "details": {
+            "ko": "KISIA · 2024.09.04 – 2024.09.06 · 블록체인 보안 기초",
+            "en": "KISIA · Sep 4 – Sep 6, 2024 · Blockchain security fundamentals."
+          },
+          "links": [
+            {
+              "label": {
+                "ko": "커리큘럼",
+                "en": "Curriculum"
+              },
+              "href": "https://www.kisia.or.kr/talent_support/education_business/ict_convergence_industry_security/"
+            },
+            {
+              "label": {
+                "ko": "수료 증빙",
+                "en": "Completion Proof"
+              },
+              "href": "assets/proof/수료증_융합보안(블록체인)_이현규.pdf"
+            }
+          ]
+        },
+        {
+          "title": {
+            "ko": "KnockOn Elite Whitehacker Bootcamp 1st",
+            "en": "KnockOn Elite Whitehacker Bootcamp 1st"
+          },
+          "details": {
+            "ko": "KnockOn · 2024.02.17 – 2024.05.30 · 웹 취약점 분석 집중 과정",
+            "en": "KnockOn · Feb 17 – May 30, 2024 · Intensive web vulnerability bootcamp."
+          },
+          "links": [
+            {
+              "label": {
+                "ko": "부트캠프 안내",
+                "en": "Bootcamp"
+              },
+              "href": "https://www.knock-on.org/"
+            },
+            {
+              "label": {
+                "ko": "Top 7 증빙",
+                "en": "Top 7 Certificate"
+              },
+              "href": "assets/proof/knockon.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "2023년 프로그램",
+        "en": "2023 Programs"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "KITRI 화이트햇 스쿨 (Pre-BoB) 1기",
+            "en": "KITRI WhiteHat School (Pre-BoB) 1st Cohort"
+          },
+          "details": {
+            "ko": "KITRI · 2023.09.01 – 2024.03.22 · 보안 기초 및 실습",
+            "en": "KITRI · Sep 1, 2023 – Mar 22, 2024 · Comprehensive security training."
+          },
+          "links": [
+            {
+              "label": {
+                "ko": "프로그램 안내",
+                "en": "Program Site"
+              },
+              "href": "https://whitehatschool.kr/home/kor/main.do"
+            },
+            {
+              "label": {
+                "ko": "수료 증빙",
+                "en": "Completion Proof"
+              },
+              "href": "assets/proof/whitehat.png"
+            }
+          ]
+        },
+        {
+          "title": {
+            "ko": "KIRD 사이버보안 하계 직무연계 교육",
+            "en": "KIRD Cybersecurity Summer Course"
+          },
+          "details": {
+            "ko": "KIRD · 2023.08.16 – 2023.08.18 · 사이버보안 생태계 기초",
+            "en": "KIRD · Aug 16 – Aug 18, 2023 · Fundamentals of the cyber-security ecosystem."
+          },
+          "links": [
+            {
+              "label": {
+                "ko": "프로그램 안내",
+                "en": "Program Overview"
+              },
+              "href": "https://alpha-campus.kr/"
+            },
+            {
+              "label": {
+                "ko": "수료 증빙",
+                "en": "Completion Proof"
+              },
+              "href": "assets/proof/사이버보안 하계 직무연계 교육과정(통합교육)_20251027.pdf"
+            }
+          ]
+        },
+        {
+          "title": {
+            "ko": "Start-Up K-Shield Jr.",
+            "en": "Start-Up K-Shield Jr."
+          },
+          "details": {
+            "ko": "한국정보보호교육센터 · 2023.07.01 – 2023.07.31 · 보안 및 리눅스 기초",
+            "en": "KISEC · Jul 1 – Jul 31, 2023 · Introductory security & Linux training."
+          },
+          "links": [
+            {
+              "label": {
+                "ko": "프로그램 안내",
+                "en": "Program Site"
+              },
+              "href": "https://www.kisec.com/"
+            },
+            {
+              "label": {
+                "ko": "수료 증빙",
+                "en": "Completion Proof"
+              },
+              "href": "assets/proof/[수료증] Start-Up K-Shield Jr_이현규.pdf"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

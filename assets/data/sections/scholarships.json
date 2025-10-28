@@ -1,0 +1,82 @@
+{
+  "title": {
+    "ko": "장학금",
+    "en": "Scholarships"
+  },
+  "description": {
+    "ko": "장학금 내역입니다.",
+    "en": "Scholarship history."
+  },
+  "items": [
+    {
+      "title": {
+        "ko": "KUPC 장학금",
+        "en": "KUPC Scholarship"
+      },
+      "meta": {
+        "ko": "고려대학교 · 연도 기재",
+        "en": "Korea University · Award Year"
+      },
+      "body": {
+        "ko": "KU PRIDE CLUB 장학금을 수혜했습니다.",
+        "en": "Received the KU PRIDE CLUB Scholarship."
+      }
+    },
+    {
+      "title": {
+        "ko": "수곡장학회 장학금",
+        "en": "Sugok Scholarship"
+      },
+      "meta": {
+        "ko": "수곡장학회 · 2024, 2025",
+        "en": "Sugok Scholarship Foundation · 2024, 2025"
+      },
+      "body": {
+        "ko": "남원 지역 장학금을 수혜했습니다.",
+        "en": "Received the Namwon Region Scholarship."
+      }
+    },
+    {
+      "title": {
+        "ko": "푸른등대 기부장학금(알리바바 코리아)",
+        "en": "Blue Lighthouse Donation Scholarship (Alibaba Korea)"
+      },
+      "meta": {
+        "ko": "한국장학재단 · 2025",
+        "en": "Korea Scholarship Foundation & Alibaba Korea · 2025"
+      },
+      "body": {
+        "ko": "알리바바 코리아 기부장학금을 수혜했습니다.",
+        "en": "Received the Alibaba Korea Donation Scholarship."
+      }
+    },
+    {
+      "title": {
+        "ko": "재경남원향우회 장학금",
+        "en": "Namwon Alumni Scholarship"
+      },
+      "meta": {
+        "ko": "재경남원향우회 · 2024",
+        "en": "Namwon Alumni Association · 2024"
+      },
+      "body": {
+        "ko": "재경남원향우회 장학금을 수혜했습니다.",
+        "en": "Received the Namwon Alumni Scholarship."
+      }
+    },
+    {
+      "title": {
+        "ko": "고려대학교 등록금 전액 장학금",
+        "en": "Full Tuition Scholarship"
+      },
+      "meta": {
+        "ko": "고려대학교 · 2023, 2024, 2025",
+        "en": "Korea University · 2023, 2024, 2025"
+      },
+      "body": {
+        "ko": "등록금 전액 장학금을 수혜했습니다.",
+        "en": "Received the Full Tuition Scholarship."
+      }
+    }
+  ]
+}

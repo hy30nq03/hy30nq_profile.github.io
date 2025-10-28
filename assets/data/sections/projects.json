@@ -1,0 +1,186 @@
+{
+  "title": {
+    "ko": "프로젝트",
+    "en": "Projects"
+  },
+  "description": {
+    "ko": "대학생 시절부터 현재까지 진행한 프로젝트 내역입니다.",
+    "en": "Projects completed from university to present."
+  },
+  "items": [
+    {
+      "title": {
+        "ko": "빡공팟 레드팀 실습 환경 구축",
+        "en": "BbakgongPot Red-Team Lab Deployment"
+      },
+      "meta": {
+        "ko": "2025.02.24 – 2025.06.22",
+        "en": "Feb 24 – Jun 22, 2025"
+      },
+      "body": {
+        "ko": "빡공팟 커뮤니티 레드팀 스터디를 위해 Vagrant, Ansible, Docker 등을 활용해 실습 환경을 설계·자동화했습니다. 실전 침투 테스트 시나리오를 기반으로 다중 단계 공격 흐름과 방어 모듈을 추가해 팀 학습을 지원했습니다.",
+        "en": "Designed and automated a red-team lab for the BbakgongPot community study group using Vagrant, Ansible, Docker, and custom tooling. Built multi-stage attack simulations and defensive modules to mirror real-world penetration tests."
+      },
+      "links": []
+    },
+    {
+      "title": {
+        "ko": "HSPACE 침투 테스트 교육 콘텐츠 개발",
+        "en": "HSPACE Pentest Training Curriculum Development"
+      },
+      "meta": {
+        "ko": "쇼핑몰 컨텐츠 개발 · Knights of the SPACE · 2025.06.09 ~ 2025.07.30",
+        "en": "Shopping Mall Content Development · Knights of the SPACE · Jun 9 – Jul 30, 2025"
+      },
+      "body": {
+        "ko": "침투 테스트를 처음 접하는 학생들도 따라올 수 있도록 가상의 쇼핑몰을 구축하여 난이도별로 자유롭게 실습을 해볼 수 있도록 시나리오를 구성했습니다.",
+        "en": "Built a virtual shopping mall and configured tiered pentest scenarios so students could follow along."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "Knights of the SPACE",
+            "en": "Knights of the SPACE"
+          },
+          "href": "https://hspace.io/"
+        },
+        {
+          "label": {
+            "ko": "깃허브 링크",
+            "en": "GitHub Link"
+          },
+          "href": "https://github.com/hspace-io/SPACE-PENTEST"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "실전 버그바운티 사례 기반 CTF 문제 제작",
+        "en": "CTF Challenges based on real bug bounty cases development"
+      },
+      "meta": {
+        "ko": "플랫폼 벡엔드 개발 · 파인더갭 · 2025.06.09 ~ 2025.08.01",
+        "en": "Platform Backend Development · FinderGap · Jun 9 ~ Aug 1, 2025"
+      },
+      "body": {
+        "ko": "플랫폼의 백엔드 전체를 다 구현했습니다.",
+        "en": "Implemented the entire backend of the ctf platform."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "FinderGap",
+            "en": "FinderGap"
+          },
+          "href": "https://findthegap.co.kr/"
+        },
+        {
+          "label": {
+            "ko": "수료증빙",
+            "en": "Award Certificate"
+          },
+          "href": "https://hy30nq.com/assets/proof/ctf-bugbounty-brief.pdf"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "Earth CTF 플랫폼",
+        "en": "Earth CTF Platform"
+      },
+      "meta": {
+        "ko": "개발 · 고려대학교 인공지능사이버보안학과 · 2024",
+        "en": "Developer · Korea Univ. AI Cybersecurity · 2024"
+      },
+      "body": {
+        "ko": "웹 개발 전반적 과정에 다 참여하였습니다.",
+        "en": "Participated in the entire web development process."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "GitHub 저장소",
+            "en": "GitHub Repo"
+          },
+          "href": "https://github.com/hy30nq/earth-ctf-site"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "WordPress 플러그인 취약점 분석",
+        "en": "WordPress Plugin Vulnerability Analysis"
+      },
+      "meta": {
+        "ko": "개발 · 고려대학교 인공지능사이버보안학과 · 2024",
+        "en": "Developer · Korea Univ. AI Cybersecurity · 2024"
+      },
+      "body": {
+        "ko": "학교 학술제에서 발표하기 위해 자동 탐지 도구를 제작했습니다. 그 중 sqli 부분을 맡아서 제작을 진행하였습니다.",
+        "en": "Created an automated detection tool for the departmental symposium, focusing on SQLi implementation."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "학술제 사이트",
+            "en": "Research Site"
+          },
+          "href": "https://secu.korea.ac.kr/secu/5393/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGc2VjdSUyRjE3MyUyRjI1NTMwMyUyRmFydGNsVmlldy5kbyUzRnBhZ2UlM0QxJTI2ZmluZFR5cGUlM0RzaiUyNmZpbmRXb3JkJTNEJUVEJTk1JTk5JUVDJTg4JUEwJUVDJUEwJTlDJTI2ZmluZENsU2VxJTNEJTI2ZmluZE9wbndyZCUzRCUyNnJnc0JnbmRlU3RyJTNEJTI2cmdzRW5kZGVTdHIlM0QlMjZwYXNzd29yZCUzRCUyNg%3D%3D"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "AI 기반 악성 URL 분류기",
+        "en": "AI-powered Malicious URL Checker"
+      },
+      "meta": {
+        "ko": "프론트엔드, 데이터 전처리 · KISIA AI 보안 네트워크 · 2024",
+        "en": "Frontend, Data Preprocessing · KISIA AI Security Network · 2024"
+      },
+      "body": {
+        "ko": "피싱 URL 데이터를 정제하고 모델 학습 파이프라인을 구축했습니다.",
+        "en": "Cleaned phishing datasets and built the training pipeline."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "GitHub 저장소",
+            "en": "GitHub Repo"
+          },
+          "href": "https://github.com/racheliee/kisia-project"
+        },
+        {
+          "label": {
+            "ko": "시연 자료",
+            "en": "Demo Slides"
+          },
+          "href": "https://drive.google.com/file/d/11uldY1oqZdwyKIOcpvntjKv60Rvu_ZnG/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "LAMP 스택 취약 실습 환경",
+        "en": "LAMP Stack Vulnerable Lab"
+      },
+      "meta": {
+        "ko": "개발 · KnockOn bootcamp 1st · 2024",
+        "en": "Developer · KnockOn Bootcamp 1st · 2024"
+      },
+      "body": {
+        "ko": "의도적으로 취약한 웹 사이트를 구축하고 웹 사이트 실제 취약점 분석을 통해 취약점 패치를 진행했습니다.",
+        "en": "Built an intentionally vulnerable web site and patched the vulnerabilities through actual web site vulnerability analysis."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "GitHub 저장소",
+            "en": "GitHub Repo"
+          },
+          "href": "https://github.com/hy30nq/myWebsiteWithKnock"
+        }
+      ]
+    }
+  ]
+}
