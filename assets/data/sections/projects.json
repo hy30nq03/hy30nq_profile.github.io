@@ -18,8 +18,8 @@
         "en": "Feb 24 – Jun 22, 2025"
       },
       "body": {
-        "ko": "빡공팟 커뮤니티 레드팀 스터디를 위해 Vagrant, Ansible, Docker 등을 활용해 실습 환경을 설계·자동화했습니다. 실전 침투 테스트 시나리오를 기반으로 다중 단계 공격 흐름과 방어 모듈을 추가해 팀 학습을 지원했습니다.",
-        "en": "Designed and automated a red-team lab for the BbakgongPot community study group using Vagrant, Ansible, Docker, and custom tooling. Built multi-stage attack simulations and defensive modules to mirror real-world penetration tests."
+        "ko": "학습을 위해 Vagrant, Ansible, Docker 등을 활용해 실습 환경을 설계·자동화했습니다. 실전 침투 테스트 시나리오를 기반으로 다중 단계 공격 흐름과 방어 모듈을 추가해 해당 도구에 대해서 학습했습니다.",
+        "en": "For learning, we designed and automated the practice environment using Vagrant, Ansible, Docker, etc. Based on a practical penetration test scenario, we added a multi-stage attack flow and defense module to learn about the tool."
       },
       "links": []
     },
