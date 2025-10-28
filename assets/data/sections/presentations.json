@@ -1,0 +1,42 @@
+{
+  "title": {
+    "ko": "발표",
+    "en": "Presentations"
+  },
+  "description": {
+    "ko": "발표한 내역입니다.",
+    "en": "Presentations."
+  },
+  "items": [
+    {
+      "title": {
+        "ko": "정보보호 인재양성 교육사업 성과교류회",
+        "en": "Information Security Talent Development Program Results Sharing Session"
+      },
+      "meta": {
+        "ko": "한국정보보호산업협회 · 2024",
+        "en": "Korea Information Security Industry Association · 2024"
+      },
+      "body": {
+        "ko": "그 동안 교육과정과 해커톤 내에서 느낀점을 발표하고 기술에 대한 설명을 했습니다.",
+        "en": "Presented the experiences and technical descriptions during the education process and hackathon."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "발표 자료",
+            "en": "Slide Deck"
+          },
+          "href": "assets/proof/2024_KISIA_성과공유회_발표.pdf"
+        },
+        {
+          "label": {
+            "ko": "관련 글",
+            "en": "Related Article"
+          },
+          "href": "https://www.boannews.com/media/view.asp?idx=135259"
+        }
+      ]
+    }
+  ]
+}

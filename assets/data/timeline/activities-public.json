@@ -1,0 +1,231 @@
+{
+  "title": {
+    "ko": "공개 활동",
+    "en": "Public Activities"
+  },
+  "description": {
+    "ko": "공개로 공유 가능한 활동입니다.",
+    "en": "Activities that can be shared publicly."
+  },
+  "groups": [
+    {
+      "title": {
+        "ko": "2025년",
+        "en": "2025"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "SSD CTF 문제 출제",
+            "en": "SSD CTF"
+          },
+          "details": {
+            "ko": "2025.08.29 – 2025.08.30 · CTF 문제 출제",
+            "en": "Aug 29 – Aug 30, 2025 · Authored CTF challenges"
+          },
+          "links": []
+        },
+        {
+          "title": {
+            "ko": "XKSW 연합 세미나 CTF 문제 검수",
+            "en": "XKSW Joint Seminar"
+          },
+          "details": {
+            "ko": "2025.08.25 – 2025.08.26 · CTF 문제 검수",
+            "en": "Aug 25 – Aug 26, 2025 · Reviewed CTF challenges"
+          },
+          "links": []
+        },
+        {
+          "title": {
+            "ko": "한국정보기술연구원(KITRI) 화이트햇 스쿨 3기 3단계 조교",
+            "en": "KITRI WhiteHat School 3rd Cohort Stage 3 TA"
+          },
+          "details": {
+            "ko": "2025.08.06 – 2025.08.30 · 화이트햇 스쿨 3단계 조교",
+            "en": "Aug 6 – Aug 30, 2025 · Teaching assistant for Stage 3"
+          },
+          "links": []
+        },
+        {
+          "title": {
+            "ko": "APEX 2025 테스트런",
+            "en": "APEX 2025 Testrun"
+          },
+          "details": {
+            "ko": "2025.08.07 · 사이버서밋 2025 테스트런 참가",
+            "en": "Aug 7, 2025 · Participated in Cyber Summit 2025 testrun"
+          },
+          "links": []
+        },
+        {
+          "title": {
+            "ko": "한국정보기술연구원(KITRI) 화이트햇 스쿨 3기 중간발표 조교",
+            "en": "KITRI WhiteHat School 3rd Cohort Midterm TA"
+          },
+          "details": {
+            "ko": "2025.06.28 · 화이트햇 스쿨 3기 중간발표 조교",
+            "en": "Jun 28, 2025 · Teaching assistant for midterm presentation"
+          },
+          "links": []
+        },
+        {
+          "title": {
+            "ko": "한국정보기술연구원(KITRI) 화이트햇 스쿨 3기 1단계 조교",
+            "en": "KITRI WhiteHat School 3rd Cohort Stage 1 TA"
+          },
+          "details": {
+            "ko": "2025.03 – 2025.05 · 화이트햇 스쿨 3기 1단계 조교",
+            "en": "Mar 2025 – May 2025 · Teaching assistant for Stage 1"
+          },
+          "links": []
+        },
+        {
+          "title": {
+            "ko": "POC Security 30회 동계 해킹캠프",
+            "en": "POC Security 30th Winter Hacking Camp"
+          },
+          "details": {
+            "ko": "2025.02.15 – 2025.02.16 · 참가자",
+            "en": "Feb 15 – Feb 16, 2025 · Participant"
+          },
+          "links": []
+        },
+        {
+          "title": {
+            "ko": "화이트햇콘테스트 2025 예선, 본선 진출 (5위)",
+            "en": "WhiteHat Contest 2025 Qualifier, Finals (5th place)"
+          },
+          "details": {
+            "ko": "2025.10.18 · 화이트햇콘테스트 예선 5위, 본선 진출",
+            "en": "Oct 18, 2025 · Placed 5th in the WhiteHat Contest preliminaries and advanced to finals"
+          },
+          "links": [
+            {
+              "label": {
+                "ko": "화이트햇콘테스트",
+                "en": "WhiteHat Contest Overview"
+              },
+              "href": "https://whitehatcontest.kr/"
+            }
+          ]
+        },
+        {
+          "title": {
+            "ko": "BlackHat MEA 2025 예선, 본선 진출 (41위)",
+            "en": "BlackHat MEA 2025 Qualifier, Finals (41st place)"
+          },
+          "details": {
+            "ko": "2025.09.07 – 2025.09.08 · 예선 41위, 본선 진출 (24시간 온라인 CTF)",
+            "en": "Sep 7 – Sep 8, 2025 · Placed 41st in the 24-hour online CTF and advanced to finals"
+          },
+          "links": [
+            {
+              "label": {
+                "ko": "BlackHat MEA 공식 사이트",
+                "en": "BlackHat MEA Official Site"
+              },
+              "href": "https://www.blackhatmea.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "2024년",
+        "en": "2024"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "kakao · goorm 구름톤 유니브 3기",
+            "en": "kakao · goorm Goormthon Univ. 3rd Cohort"
+          },
+          "details": {
+            "ko": "2024.09 – 2025.01 · 프로젝트 PM",
+            "en": "Sep 2024 – Jan 2025 · Project PM"
+          },
+          "links": []
+        },
+        {
+          "title": {
+            "ko": "한국정보기술연구원(KITRI) 화이트햇 스쿨 서포터즈",
+            "en": "KITRI WhiteHat School Supporters"
+          },
+          "details": {
+            "ko": "2024.11.18 – 2024.12.27 · 서포터즈",
+            "en": "Nov 18 – Dec 27, 2024 · Supporter"
+          },
+          "links": []
+        },
+        {
+          "title": {
+            "ko": "과학기술정보통신부 · 한국인터넷진흥원(KISA) 2024 블록체인 누리단",
+            "en": "MSIT · KISA 2024 Blockchain Nuri-dan"
+          },
+          "details": {
+            "ko": "2024.07 – 2024.12 · 참가자",
+            "en": "Jul 2024 – Dec 2024 · Participant"
+          },
+          "links": []
+        },
+        {
+          "title": {
+            "ko": "KnockOn Q&A 멘토",
+            "en": "KnockOn Q&A Mentor"
+          },
+          "details": {
+            "ko": "2024.06 – 현재 · 멘토",
+            "en": "Jun 2024 – Present · Mentor"
+          },
+          "links": []
+        },
+        {
+          "title": {
+            "ko": "개인정보보호위원회 · 한국인터넷진흥원(KISA) 개인정보 불법유통 대응 대학생 모니터링단",
+            "en": "PIPC · KISA Illegal Personal Data Distribution Monitoring Corps"
+          },
+          "details": {
+            "ko": "2024.07.22 – 2024.12.03 · 모니터링 담당",
+            "en": "Jul 22 – Dec 3, 2024 · Monitoring officer"
+          },
+          "links": []
+        },
+        {
+          "title": {
+            "ko": "중부정보보호지원센터 웹 취약점 점검 실습",
+            "en": "Central Information Security Support Center Web Vulnerability Lab"
+          },
+          "details": {
+            "ko": "2024.10.08 · 실습 담당",
+            "en": "Oct 8, 2024 · Lab facilitator"
+          },
+          "links": []
+        },
+        {
+          "title": {
+            "ko": "POC Security 29회 하계 해킹캠프",
+            "en": "POC Security 29th Summer Hacking Camp"
+          },
+          "details": {
+            "ko": "2024.08.17 – 2024.08.18 · 참가자",
+            "en": "Aug 17 – Aug 18, 2024 · Participant"
+          },
+          "links": []
+        },
+        {
+          "title": {
+            "ko": "코멘토 진로부트캠프",
+            "en": "Comento Career Bootcamp"
+          },
+          "details": {
+            "ko": "2024.05.09 – 2024.06.30 · 정보보안 / 개인정보보호 실무 체험",
+            "en": "May 9 – Jun 30, 2024 · Hands-on experience in security & privacy"
+          },
+          "links": []
+        }
+      ]
+    }
+  ]
+}

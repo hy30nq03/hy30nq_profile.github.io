@@ -1,0 +1,48 @@
+{
+  "title": {
+    "ko": "언어 역량",
+    "en": "Languages"
+  },
+  "description": {
+    "ko": "언어 능력 기록입니다.",
+    "en": "Language capabilities."
+  },
+  "items": [
+    {
+      "title": {
+        "ko": "한국어",
+        "en": "Korean"
+      },
+      "details": [
+        {
+          "ko": "모국어.",
+          "en": "Native."
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "영어",
+        "en": "English"
+      },
+      "details": [
+        {
+          "ko": "기본적인 읽기, 쓰기 가능합니다.",
+          "en": "Proficient in reading and writing."
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "중국어",
+        "en": "Chinese"
+      },
+      "details": [
+        {
+          "ko": "HSK 4급, HSKK 초급.",
+          "en": "HSK Level 4, HSKK Elementary."
+        }
+      ]
+    }
+  ]
+}

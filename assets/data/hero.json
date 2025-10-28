@@ -1,0 +1,62 @@
+{
+  "eyebrow": {
+    "ko": "대학생 · 보안 연구 지망생",
+    "en": "University Student · Security Enthusiast"
+  },
+  "title": {
+    "ko": "안녕하세요. hy30nq입니다.",
+    "en": "Hello, I'm hy30nq."
+  },
+  "lead": {
+    "ko": "아직 학생으로서 꾸준히 공부하며, 실전 경험을 바탕으로 다양한 보안 프로젝트와 연구에 도전하고 있습니다. 어렵고 새로운 내용을 배우고 직접 실습하며, 그 과정에서 얻은 깨달음을 기록하고 주변에도 쉽게 전달하려고 노력합니다.",
+    "en": "As a student still learning, I constantly challenge myself with new security topics and hands-on projects. I focus on turning complex concepts into approachable study material and practical experience, sharing what I learn with others along the way."
+  },
+  "actions": [
+    {
+      "style": "primary",
+      "label": {
+        "ko": "이메일",
+        "en": "Email"
+      },
+      "href": "mailto:hy30nq@gmail.com"
+    },
+    {
+      "style": "ghost",
+      "label": {
+        "ko": "GitHub",
+        "en": "GitHub"
+      },
+      "href": "https://github.com/hy30nq03"
+    },
+    {
+      "style": "ghost",
+      "label": {
+        "ko": "블로그",
+        "en": "Blog"
+      },
+      "href": "https://hyeonql.tistory.com/"
+    }
+  ],
+  "affiliations": [
+    {
+      "ko": "SeeCure Lab (고려대학교 강정민 교수님 연구실)",
+      "en": "SeeCure Lab (Prof. Jung-Min Kang's Lab at Korea University)",
+      "href": "https://secu.korea.ac.kr/faculty/8261/subview.do"
+    },
+    {
+      "ko": "KUality",
+      "en": "KUality",
+      "href": "https://kuality.kr/"
+    },
+    {
+      "ko": "Knights of the SPACE",
+      "en": "Knights of the SPACE",
+      "href": "https://hspace.io/"
+    },
+    {
+      "ko": "Rubiyalab",
+      "en": "Rubiyalab",
+      "href": "https://rubiyalab.team/"
+    }
+  ]
+}

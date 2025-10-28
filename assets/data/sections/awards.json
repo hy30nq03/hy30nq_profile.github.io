@@ -1,0 +1,192 @@
+{
+  "title": {
+    "ko": "주요 수상 실적",
+    "en": "Major Awards"
+  },
+  "description": {
+    "ko": "대학생 시절부터 현재까지 받은 수상 내역입니다.",
+    "en": "Awards received from university to present."
+  },
+  "items": [
+    {
+      "title": {
+        "ko": "장려상 · 2024 제2회 개인정보보호/보안 정책 아이디어 공모전",
+        "en": "Encouragement Prize · 2024 2nd Personal Information Protection & Security Policy Idea Contest"
+      },
+      "meta": {
+        "ko": "고려대학교 정보보호대학원 · 2025.02.07",
+        "en": "Korea University School of Cybersecurity · Feb 7, 2025"
+      },
+      "body": {
+        "ko": "수상작: 개인정보 익명화 인증 제도 도입을 통한 데이터 활용과 개인정보보호의 균형 정책 제안",
+        "en": "Awarded work: Policy proposal for balancing data utilization and personal information protection through the introduction of an anonymity certification system."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "공모전 안내",
+            "en": "Contest Overview"
+          },
+          "href": "https://security.korea.ac.kr/m06_04/59"
+        },
+        {
+          "label": {
+            "ko": "수상 증빙",
+            "en": "Award Certificate"
+          },
+          "href": "https://scontent-icn2-1.cdninstagram.com/v/t51.75761-15/482512303_17960458811903290_8218111823393089566_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=MzU4MDY4MzU4NTQ2NTM4NTczOQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjExNzB4MjA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=S74fOuE4xzMQ7kNvwGByzG-&_nc_oc=AdkJNd9fkrD0NHlEfd1pzD44D56I3RAQfgAms5xRZaHlOoiEy38kZCLqODyNoSdmU6g&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=98QCQKIGIId_COfsUMdAmQ&oh=00_AffKuU_tst3NchS0XnQRY-tPxf52MfFEnlhpl_Y3kYz1tA&oe=68FD2B8D"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "우수상 (한국정보보호산업협회장상) · AI 보안 기술개발 참여수기 공모전",
+        "en": "Excellence Award (Korea Information Security Industry Association Chairman) · AI Security Technology Development Essay Contest"
+      },
+      "meta": {
+        "ko": "한국정보보호산업협회 · 2024.12.20",
+        "en": "Korea Information Security Industry Association · Dec 20, 2024"
+      },
+      "body": {
+        "ko": "AI보안 기술개발 과정에서 얻은 경험과 후기를 작성하여 제출했습니다.",
+        "en": "Submitted an essay documenting AI security technology development experiences and reflections."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "원문 보기",
+            "en": "Essay View"
+          },
+          "href": "https://blog.naver.com/kisiaedu/223785868393"
+        },
+        {
+          "label": {
+            "ko": "수상 증빙",
+            "en": "Award Certificate"
+          },
+          "href": "https://scontent-icn2-1.cdninstagram.com/v/t51.75761-15/470982838_17951481521903290_1591343838321866581_n.jpg?stp=dst-jpg_e35_p1080x1080_tt6&_nc_cat=107&ig_cache_key=MzUyNzEwNjI3NzA2MDQzNDY1NA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTgwMC5zZHIuQzMifQ%3D%3D&_nc_ohc=8TMrDweqHhUQ7kNvwGcOkcP&_nc_oc=AdnbjeSUh3PYoY5iBAQdyV-TRaYE2R9fryDoQHj9MtzrYAyhlFd4XddebEYFAI4y5aE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=vcQ4qEY-d8r0sJmXPh_r-A&oh=00_Afe3Ot7DGLLi6m6MmnB7WQqMRqYF5b2oIJ2ndth5rB4hcg&oe=68FD417F"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "최우수 수료생 (개인) (과학기술정보통신부 장관상) · KISIA AI보안 기술개발 교육과정",
+        "en": "Top Graduate (Individual) (Minister of Science and ICT) · KISIA AI Security Technology Development Program"
+      },
+      "meta": {
+        "ko": "과학기술정보통신부 · 2024.12.20",
+        "en": "Ministry of Science and ICT · Dec 20, 2024"
+      },
+      "body": {
+        "ko": "강의, 실습, 프로젝트 평가 전 영역에서 최고 성적을 기록했습니다.",
+        "en": "Achieved the highest individual performance score across coursework, labs, and applied security projects."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "프로그램 개요",
+            "en": "Program Overview"
+          },
+          "href": "https://www.kisia.or.kr/talent_support/education_business/ai_security_technology_development/"
+        },
+        {
+          "label": {
+            "ko": "시상 내역",
+            "en": "Award Certificate"
+          },
+          "href": "https://scontent-icn2-1.cdninstagram.com/v/t51.75761-15/470971040_17951481512903290_2065389978490177342_n.jpg?stp=dst-jpg_e35_p720x720_tt6&_nc_cat=111&ig_cache_key=MzUyNzEwNjI3Njg1MDcwNTMxOQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTgwMC5zZHIuQzMifQ%3D%3D&_nc_ohc=nye1goEq-u8Q7kNvwFb6krL&_nc_oc=AdmqMFbMbTWZq-7D775JTcibHE1foEMcvcK8Nf3QXVqPC1Y1aNCANtZ3KAg-hbF8dn8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=vcQ4qEY-d8r0sJmXPh_r-A&oh=00_AfezVI0q5DxuUCDRKEjbhCzulfMYOZb2eCZHT2f6l2c4Fg&oe=68FD2D13"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "최우수상 (1등) (과학기술정보통신부 장관상) · 2024 제2회 KISIA 정보보호 개발자 해커톤",
+        "en": "Grand Prize (1st Place) (Minister of Science and ICT) · 2024 2nd KISIA Information Security Developer Hackathon"
+      },
+      "meta": {
+        "ko": "과학기술정보통신부 · 2024.08.21",
+        "en": "Ministry of Science and ICT · Aug 21, 2024"
+      },
+      "body": {
+        "ko": "일상 생활에서의 정보보호라는 주제로 크롬 익스텐션 기반 악성 URL 탐지 서비스를 개발해 1등을 차지했습니다.",
+        "en": "Developed an AI-driven threat detection project that secured first place among national finalist teams."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "뉴스 기사",
+            "en": "News Coverage"
+          },
+          "href": "https://news.naver.com/main/read.naver?mode=LSD&mid=sec&sid1=102&oid=032&aid=0005326020"
+        },
+        {
+          "label": {
+            "ko": "시상 사진",
+            "en": "Award Photo"
+          },
+          "href": "https://scontent-icn2-1.cdninstagram.com/v/t51.75761-15/470900163_17951481500903290_4082736277566649892_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ig_cache_key=MzUyNzEwNjI3Njg0MjQ4MjE5OQ%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTgwMC5zZHIuQzMifQ%3D%3D&_nc_ohc=TJy0R_rOKRoQ7kNvwEn44cT&_nc_oc=AdkDyvlfWbCuTcMdyhqZLjT32yDW3UGvBrmlAto0p8Ufj0Qic3RQJqA6Ky9pss_5L9Q&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=vcQ4qEY-d8r0sJmXPh_r-A&oh=00_AfeIrxtj1H2mgqXw6ZzX9LkltJ2ME2n8r0_HOQZ8sEdciw&oe=68FD37A3"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "우승 (1등) · 제29회 하계 해킹캠프 CTF (Team 고민중독)",
+        "en": "Champion (1st Place) · 29th Summer Hacking Camp CTF (Team 고민중독)"
+      },
+      "meta": {
+        "ko": "POC Security · 2024.08.18",
+        "en": "POC Security · Aug 18, 2024"
+      },
+      "body": {
+        "ko": "당일 팀 구성을 통해 CTF 우승을 했습니다.",
+        "en": "Won the CTF by forming a team on the day."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "해킹캠프",
+            "en": "Hacking Camp"
+          },
+          "href": "https://hackingcamp.org/"
+        },
+        {
+          "label": {
+            "ko": "우승 증빙",
+            "en": "Award Certificate"
+          },
+          "href": "https://scontent-icn2-1.cdninstagram.com/v/t39.30808-6/456133135_17935597445903290_3978241598401644293_n.jpg?stp=dst-jpegr_e35_tt6&_nc_cat=108&ig_cache_key=MzQzNzQyNTU2MDE2MTA0NDkxNA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTA4MC5oZHIuQzMifQ%3D%3D&_nc_ohc=GP6Ifp1zNgoQ7kNvwGfg3Xi&_nc_oc=AdksJg6t91F18dXtPCW0lkNNcZBj_kHc4_FQ5Hi5amCNPPC-lut1Z98CMY-HLtaJowU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_gid=vcQ4qEY-d8r0sJmXPh_r-A&oh=00_AffIXAJL5Iftw6g5ut46aKGRK62eMw9qIE1nyCezHFb4ZA&oe=68FD17DB"
+        }
+      ]
+    },
+    {
+      "title": {
+        "ko": "TOP 20 (과학기술정보통신부 장관 인증서) · KITRI 차세대 보안리더 양성프로그램 화이트햇 스쿨 (Pre-BoB) 1기",
+        "en": "Top 20 (Minister of Science and ICT Certification) · KITRI Next-Generation Security Leader Training Program WhiteHat School (Pre-BoB) Cohort 1"
+      },
+      "meta": {
+        "ko": "과학기술정보통신부 · 2024.03.22",
+        "en": "Ministry of Science and ICT · Mar 22, 2024"
+      },
+      "body": {
+        "ko": "320명 가운데 상위 20인에 선정되어 장관 인증서를 수여받았습니다.",
+        "en": "Ranked in the Top 20 out of 320 participants and received a certificate of recognition from the Minister of Science and ICT."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "관련 글",
+            "en": "Related Article"
+          },
+          "href": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=113&mPid=238&bbsSeqNo=94&nttSeqNo=3184227"
+        },
+        {
+          "label": {
+            "ko": "수상 증빙",
+            "en": "Award Certificate"
+          },
+          "href": "https://scontent-icn2-1.cdninstagram.com/v/t51.29350-15/434164349_974181463575813_745148474164522539_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0uaW1hZ2VfdXJsZ2VuLjE0NDB4MTA4MC5zZHIuZjI5MzUwLmRlZmF1bHRfaW1hZ2UuYzIifQ&_nc_ht=scontent-icn2-1.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2QHMrW9s9deDOnMSIHkwj9yCXor3OZ96mYR0QmSDzfWuUm8T9ZZGTZ8CLabXu9IL93M&_nc_ohc=PHZtpB9btJwQ7kNvwFviyKp&_nc_gid=vcQ4qEY-d8r0sJmXPh_r-A&edm=AP4sbd4BAAAA&ccb=7-5&ig_cache_key=MzMyOTM2Nzc0MDcxOTY1NTIwNg%3D%3D.3-ccb7-5&oh=00_AfcstvxcL8Xr8fNJ6bU7308m7Ur6jAiqGe6Pfz94-aQwfQ&oe=68FD37CC&_nc_sid=7a9f4b"
+        }
+      ]
+    }
+  ]
+}
