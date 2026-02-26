@@ -77,6 +77,20 @@
         "ko": "등록금 전액 장학금을 수혜했습니다.",
         "en": "Received the Full Tuition Scholarship."
       }
+    },
+    {
+      "title": {
+        "ko": "귀뚜라미 문화재단 장학금",
+        "en": "Kiturami Culture Foundation Scholarship"
+      },
+      "meta": {
+        "ko": "귀뚜라미 문화재단 · 연도 기재",
+        "en": "Kiturami Culture Foundation · Award Year"
+      },
+      "body": {
+        "ko": "귀뚜라미 문화재단 장학금을 수혜했습니다.",
+        "en": "Received the Kiturami Culture Foundation Scholarship."
+      }
     }
   ]
 }

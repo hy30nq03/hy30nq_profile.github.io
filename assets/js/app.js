@@ -64,7 +64,7 @@ async function hydrateAuthenticatedApp() {
     renderAll();
   } catch (error) {
     console.error(error);
-    displayError('Failed to load embedded data bundle. Please verify the data-bundle script contents.');
+    displayError('Failed to load profile data from JSON files. Please check assets/data/ directory.');
   }
 }
 
@@ -376,26 +376,54 @@ function updateYear() {
   }
 }
 
-async function loadProfileData() {
-  const bundleScript = document.getElementById('data-bundle');
-  if (!bundleScript) {
-    throw new Error('Missing data bundle script tag');
-  }
+async function fetchJSON(path) {
+  const res = await fetch(path);
+  if (!res.ok) throw new Error(`Failed to fetch ${path}: ${res.status}`);
+  return res.json();
+}
 
-  let bundle;
-  try {
-    bundle = JSON.parse(bundleScript.textContent || '{}');
-  } catch (error) {
-    throw new Error('Failed to parse embedded data bundle');
-  }
+async function loadProfileData() {
+  const [meta, hero, contact, awards, projects, cve, certifications, presentations, education, scholarships, languages, training, activitiesPublic, activitiesPrivate] = await Promise.all([
+    fetchJSON('assets/data/meta.json'),
+    fetchJSON('assets/data/hero.json'),
+    fetchJSON('assets/data/contact.json'),
+    fetchJSON('assets/data/sections/awards.json'),
+    fetchJSON('assets/data/sections/projects.json'),
+    fetchJSON('assets/data/sections/cve.json'),
+    fetchJSON('assets/data/sections/certifications.json'),
+    fetchJSON('assets/data/sections/presentations.json'),
+    fetchJSON('assets/data/sections/education.json'),
+    fetchJSON('assets/data/sections/scholarships.json'),
+    fetchJSON('assets/data/sections/languages.json'),
+    fetchJSON('assets/data/timeline/training.json'),
+    fetchJSON('assets/data/timeline/activities-public.json'),
+    fetchJSON('assets/data/timeline/activities-private.json')
+  ]);
 
   state.data = {
-    hero: bundle.hero || {},
-    contact: bundle.contact || {},
-    sections: bundle.sections || {},
-    timeline: bundle.timeline || {},
-    languages: bundle.meta?.languages || [],
-    defaultLanguage: bundle.meta?.defaultLanguage
+    hero: hero || {},
+    contact: contact || {},
+    sections: {
+      awards: awards || {},
+      projects: projects || {},
+      cve: cve || {},
+      certifications: certifications || {},
+      presentations: presentations || {},
+      education: education || {},
+      scholarships: scholarships || {},
+      languages: languages || {}
+    },
+    timeline: {
+      training: training || {},
+      activities: {
+        title: activitiesPublic?.title || { ko: '공개 활동', en: 'Public Activities' },
+        description: activitiesPublic?.description || {},
+        public: activitiesPublic || {},
+        private: activitiesPrivate || {}
+      }
+    },
+    languages: meta?.languages || [],
+    defaultLanguage: meta?.defaultLanguage
   };
 
   if (Array.isArray(state.data.languages) && state.data.languages.includes('en')) {

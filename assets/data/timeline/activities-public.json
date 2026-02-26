@@ -10,6 +10,52 @@
   "groups": [
     {
       "title": {
+        "ko": "2026년",
+        "en": "2026"
+      },
+      "items": [
+        {
+          "title": {
+            "ko": "2026 INC0GNITO FESTIVAL CTF QUALS 운영 및 문제 출제",
+            "en": "2026 INC0GNITO FESTIVAL CTF QUALS Operation & Challenge Authoring"
+          },
+          "details": {
+            "ko": "2026.02.07 · Dreamhack 플랫폼 기반 CTF 운영 및 문제 출제 (INC0GNITO)",
+            "en": "Feb 7, 2026 · Operated and authored challenges for the Dreamhack-based CTF (INC0GNITO)"
+          },
+          "links": [
+            {
+              "label": {
+                "ko": "Dreamhack CTF 페이지",
+                "en": "Dreamhack CTF Page"
+              },
+              "href": "https://dreamhack.io/ctf/793"
+            }
+          ]
+        },
+        {
+          "title": {
+            "ko": "HCTF 2026 문제 출제",
+            "en": "HCTF 2026 Challenge Author"
+          },
+          "details": {
+            "ko": "2026.02.08 · 2026 제5회 한양 해킹방어대회 HCTF with HSPACE 문제 출제",
+            "en": "Feb 8, 2026 · Authored challenges for the 5th Hanyang Hacking Defense Contest HCTF with HSPACE"
+          },
+          "links": [
+            {
+              "label": {
+                "ko": "HCTF 2026 Write-up",
+                "en": "HCTF 2026 Write-up"
+              },
+              "href": "https://blog.hspace.io/posts/hctf-2026-writeup/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": {
         "ko": "2025년",
         "en": "2025"
       },
@@ -126,6 +172,32 @@
                 "en": "BlackHat MEA Official Site"
               },
               "href": "https://www.blackhatmea.com/"
+            }
+          ]
+        },
+        {
+          "title": {
+            "ko": "Git 기반 Attack & Defense CTF 해커톤 기획 및 플랫폼 개발",
+            "en": "Git-based Attack & Defense CTF Hackathon Planning & Platform Development"
+          },
+          "details": {
+            "ko": "2025.11 · Frontier 1기 대상 Git·Docker 기반 Attack & Defense 형식 해커톤 기획, Git 기반 CTF 플랫폼 개발 및 운영",
+            "en": "Nov 2025 · Planned a Git & Docker-based Attack & Defense hackathon for the Frontier 1st cohort and developed/operated the Git-based CTF platform"
+          },
+          "links": [
+            {
+              "label": {
+                "ko": "GitCTF 개요",
+                "en": "GitCTF Overview"
+              },
+              "href": "https://brwook.github.io/posts/paper-git-based-ctf/"
+            },
+            {
+              "label": {
+                "ko": "GitCTF 프레임워크",
+                "en": "GitCTF Framework"
+              },
+              "href": "https://github.com/SoftSec-KAIST/GitCTF"
             }
           ]
         }

@@ -108,6 +108,36 @@
     },
     {
       "title": {
+        "ko": "Git 기반 Attack & Defense CTF 플랫폼",
+        "en": "Git-based Attack & Defense CTF Platform"
+      },
+      "meta": {
+        "ko": "플랫폼 기획·개발·운영 · Frontier 1기 해커톤 · 2025.11",
+        "en": "Planning, Development & Operation · Frontier 1st Cohort Hackathon · Nov 2025"
+      },
+      "body": {
+        "ko": "Git과 Docker를 활용해 Attack & Defense 형식의 CTF 해커톤 플랫폼을 설계·구현하고, 팀 단위 서비스 개발 → 취약점 삽입 → 상호 공격·방어까지 전체 플로우를 운영했습니다. GitHub 이슈 기반 공격 기록 관리와 자동 검증 스크립트를 통해 점수화를 자동화했습니다.",
+        "en": "Designed and implemented a Git- and Docker-based Attack & Defense CTF hackathon platform, operating the full flow from team-based service development to vulnerability injection and mutual attack/defense. Automated scoring with GitHub issue–based attack tracking and verification scripts."
+      },
+      "links": [
+        {
+          "label": {
+            "ko": "GitCTF 개요",
+            "en": "GitCTF Overview"
+          },
+          "href": "https://brwook.github.io/posts/paper-git-based-ctf/"
+        },
+        {
+          "label": {
+            "ko": "GitCTF 프레임워크",
+            "en": "GitCTF Framework"
+          },
+          "href": "https://github.com/SoftSec-KAIST/GitCTF"
+        }
+      ]
+    },
+    {
+      "title": {
         "ko": "WordPress 플러그인 취약점 분석",
         "en": "WordPress Plugin Vulnerability Analysis"
       },
