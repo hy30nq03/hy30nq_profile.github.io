@@ -1,0 +1,153 @@
+% Shared monochrome resume layout for cv-ko.tex and cv-en.tex.
+% Edit typography, spacing, and entry macros in this file.
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,left=18mm,right=18mm,top=15mm,bottom=15mm]{geometry}
+\usepackage{fontspec}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{ragged2e}
+\usepackage{needspace}
+
+% Local macOS preference, followed by portable fallbacks for XeLaTeX.
+\IfFontExistsTF{NanumSquare Neo}{
+  \setmainfont{NanumSquare Neo}[BoldFont={NanumSquare Neo ExtraBold}]
+  \setsansfont{NanumSquare Neo}[BoldFont={NanumSquare Neo ExtraBold}]
+}{
+  \IfFontExistsTF{Pretendard}{
+    \setmainfont{Pretendard}
+    \setsansfont{Pretendard}
+  }{
+    \IfFontExistsTF{Noto Sans CJK KR}{
+      \setmainfont{Noto Sans CJK KR}
+      \setsansfont{Noto Sans CJK KR}
+    }{
+      \setmainfont{Arial Unicode MS}
+      \setsansfont{Arial Unicode MS}
+    }
+  }
+}
+
+% Strict black-and-white palette.
+\definecolor{ink}{HTML}{000000}
+
+\hypersetup{
+  unicode=true,
+  hidelinks,
+  pdftitle={\cvpdftitle},
+  pdfauthor={hy30nq},
+  pdfsubject={Security research, vulnerability analysis, and CTF engineering}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{%
+  \makebox[\textwidth]{%
+    \fontsize{7.2}{9}\selectfont
+    \cvfooterlabel\hfill\cvupdated\ · \thepage
+  }%
+}
+\setlength{\footskip}{8mm}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{1.0}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\color{ink}
+
+\setlist[itemize]{
+  leftmargin=4.2mm,
+  itemsep=1.6pt,
+  topsep=2.3pt,
+  parsep=0pt,
+  partopsep=0pt,
+  label=\raisebox{0.15ex}{\tiny\textbullet}
+}
+
+\newcommand{\cvheader}[1]{%
+  \begin{tabularx}{\textwidth}{@{}X>{\RaggedLeft\arraybackslash}p{66mm}@{}}
+    {\fontsize{30}{32}\selectfont\bfseries hy30nq} &
+    \begin{tabular}[t]{@{}r@{}}
+      \fontsize{8.15}{10.6}\selectfont hy30nq@gmail.com\\
+      \fontsize{8.15}{10.6}\selectfont github.com/hy30nq03\\
+      \fontsize{8.15}{10.6}\selectfont hyeonql.tistory.com
+    \end{tabular}\\[-0.2mm]
+    {\fontsize{11.2}{13.6}\selectfont\bfseries #1} &
+    {\fontsize{8.15}{10.6}\selectfont hy30nq.com}\\
+  \end{tabularx}
+  \vspace{2.6mm}
+  \hrule height 0.8pt
+}
+
+\newcommand{\sectiontitle}[2]{%
+  \needspace{18mm}
+  \vspace{5.2mm}%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    {\fontsize{12.8}{15}\selectfont\bfseries #1} &
+    {\fontsize{7.2}{9}\selectfont\bfseries\MakeUppercase{#2}}
+  \end{tabularx}
+  \vspace{1.1mm}
+  \hrule height 0.45pt
+  \vspace{2.8mm}
+}
+
+\newcommand{\entry}[4]{%
+  \needspace{14mm}
+  \begin{tabularx}{\textwidth}{@{}>{\RaggedRight\arraybackslash}p{24mm}>{\RaggedRight\arraybackslash}X@{}}
+    {\fontsize{8.1}{10.2}\selectfont #1} &
+    {\fontsize{9.8}{12.2}\selectfont\bfseries #2}\\[-0.2mm]
+    & {\fontsize{8.0}{10.2}\selectfont\itshape #3}\\[0.55mm]
+    & {\fontsize{8.65}{11.3}\selectfont #4}
+  \end{tabularx}
+  \vspace{3.1mm}
+}
+
+\newcommand{\compactentry}[3]{%
+  \needspace{6mm}
+  \begin{tabularx}{\textwidth}{@{}>{\RaggedRight\arraybackslash}p{24mm}>{\RaggedRight\arraybackslash}X@{}}
+    {\fontsize{8.1}{10.2}\selectfont #1} &
+    {\fontsize{8.75}{11.1}\selectfont #2\enspace
+     {\fontsize{7.9}{9.8}\selectfont · #3}}
+  \end{tabularx}
+  \vspace{1.7mm}
+}
+
+% Compact bullet list for CTF authoring and participation history.
+\newenvironment{cvlist}{%
+  \begin{itemize}[
+    leftmargin=4.2mm,
+    itemsep=2.0pt,
+    topsep=0.5pt,
+    parsep=0pt,
+    partopsep=0pt
+  ]
+  \fontsize{8.75}{11.1}\selectfont
+}{%
+  \end{itemize}
+}
+
+\newcommand{\tag}[1]{%
+  \begingroup
+  \setlength{\fboxsep}{1.2mm}%
+  \setlength{\fboxrule}{0.4pt}%
+  \fbox{\strut\fontsize{7.7}{9.5}\selectfont\bfseries #1}%
+  \endgroup
+}
+
+\newcommand{\cvskills}{%
+  \vfill
+  \begin{center}
+    \tag{Vulnerability Research}\hspace{1.4mm}
+    \tag{CTF Engineering}\hspace{1.4mm}
+    \tag{Security Education}\hspace{1.4mm}
+    \tag{Python · Docker · Git}
+  \end{center}
+}

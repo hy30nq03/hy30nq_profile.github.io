@@ -1,0 +1,20 @@
+# Generated PDFs are produced only by GitHub Actions.
+*.pdf
+
+# LaTeX intermediates
+*.aux
+*.log
+*.out
+*.xdv
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.toc
+
+# Local build directories
+dist/
+build/
+tmp/
+
+# macOS
+.DS_Store

@@ -1,0 +1,166 @@
+% !TEX root = cv-ko.tex
+% !TEX program = xelatex
+% Korean CV content. Edit this file for wording, dates, and entries.
+\def\cvpdftitle{hy30nq | 보안 연구 CV}
+\def\cvfooterlabel{hy30nq · 보안 연구 CV}
+\def\cvupdated{2026년 9월 업데이트}
+\input{cv-style.tex}
+
+\begin{document}
+\sffamily
+
+\cvheader{Security Researcher · CTF Builder}
+
+% =============================================================================
+% 소속
+% =============================================================================
+\sectiontitle{소속}{Affiliations}
+
+\compactentry{2023--현재}
+  {\textbf{고려대학교 인공지능사이버보안학과}}
+  {개인정보보호융합전공 · 학·석사 연계과정생}
+
+\compactentry{현재}
+  {\textbf{과학기술전문사관 제3기 후보생}}
+  {Science \& Technology Specialist Officer Program}
+
+\compactentry{}
+  {\textbf{SeeCure Lab · KUality · Knights of the SPACE · Rubiyalab}}
+  {Security Research \& CTF Communities}
+
+% =============================================================================
+% 수상: 이 섹션에만 링크 사용
+% =============================================================================
+\sectiontitle{수상}{Awards}
+
+\compactentry{2025}
+  {\href{https://security.korea.ac.kr/m06_04/59}{\textbf{장려상} · 제2회 개인정보보호·보안 정책 아이디어 공모전}}
+  {고려대학교 정보보호대학원}
+
+\compactentry{2024}
+  {\href{https://blog.naver.com/kisiaedu/223785868393}{\textbf{우수상 · 한국정보보호산업협회장상} · AI보안 기술개발 참여수기 공모전}}
+  {한국정보보호산업협회}
+
+\compactentry{2024}
+  {\href{https://www.kisia.or.kr/talent_support/education_business/ai_security_technology_development/}{\textbf{과학기술정보통신부 장관상 · 최우수 수료생} · KISIA AI보안 기술개발 교육과정}}
+  {교육·실습·프로젝트 종합 평가}
+
+\compactentry{2024}
+  {\href{https://www.boannews.com/media/view.asp?idx=132213\&direct=mobile}{\textbf{1등 · 과학기술정보통신부 장관상} · KISIA 정보보호 개발자 해커톤}}
+  {크롬 확장 프로그램 기반 악성 URL 탐지 서비스}
+
+\compactentry{2024}
+  {\href{https://www.msit.go.kr/bbs/view.do?sCode=user\&mId=113\&mPid=238\&bbsSeqNo=94\&nttSeqNo=3184227}{\textbf{Top 20 · 과학기술정보통신부 장관 인증서} · 화이트햇 스쿨 1기}}
+  {320명 중 상위 20인}
+
+% =============================================================================
+% CTF 본선 참가
+% =============================================================================
+\sectiontitle{CTF 본선 참가}{CTF Finals}
+
+\begin{cvlist}
+  \item \textbf{2026 · DEF CON 34 CTF} · 본선 진출 · Team SSS
+  \item \textbf{2025 · 화이트햇콘테스트} · 본선 진출 · 예선 5위 · Team KUality
+  \item \textbf{2025 · Black Hat MEA CTF} · 본선 진출 · 예선 41위 · Team PPU-AENG Overflow
+\end{cvlist}
+
+% =============================================================================
+% CTF 출제: 항목은 최신순으로 한 줄씩 추가
+% =============================================================================
+\sectiontitle{CTF 출제}{Challenge Authoring \& Operations}
+
+\begin{cvlist}
+  \item \textbf{2026 · KCTF 2026 (KUality)} · 문제 출제 · Liberation Signal 1--3
+  \item \textbf{2026 · CSKWS 연합 세미나 CTF} · 대회 운영 및 문제 출제 · Ghost Display, Black Cache
+  \item \textbf{2026 · 핵테온 세종 초·중·고 사이버보안 한마당} · CTF 운영 및 문제 출제
+  \item \textbf{2026.08 · 정보보호 실무기초 교육과정} · 기초 과정 교육 및 Mini CTF 운영
+  \item \textbf{2026.02 · INC0GNITO FESTIVAL CTF} · 대회 운영 및 예선·본선 문제 출제 · Project Incoherence
+  \item \textbf{2026.02 · 제5회 한양 해킹방어대회 HCTF with HSPACE} · 문제 출제
+  \item \textbf{2025.08 · SSD CTF} · 문제 출제
+\end{cvlist}
+
+\newpage
+
+% =============================================================================
+% 프로젝트
+% =============================================================================
+\sectiontitle{프로젝트}{Selected Projects}
+
+\compactentry{2026--현재}
+  {\textbf{AI 시스템 대상 적대적 공격·사고 추적 기술 연구}}
+  {참여 연구원 · 수행 중}
+
+\compactentry{2026--현재}
+  {\textbf{원격 장비관리 통신 프로토콜 보안성 분석(TR-069) II}}
+  {참여 연구원 · 수행 중}
+
+\compactentry{2026--현재}
+  {\textbf{Threat Actor 캠페인 기반 미래 위협 시나리오 예측 AI 기술 및 MITRE D3FEND 기반 대응 기법 고도화}}
+  {참여 연구원 · 수행 중}
+
+\entry{2026}
+  {AI IDE 보안 강화를 위한 Tool/MCP 호출 게이트웨이 기반 방어 방법론}
+  {프로젝트 학기제 · Vulnerability Research}
+  {Cursor IDE의 비신뢰 프로젝트 Hook 설정이 워크스페이스 신뢰 검증과 샌드박스 없이 셸 명령을 실행하는 문제를 분석하고 재현했습니다.
+   재현 가능한 PoC와 책임 있는 제보 문서를 정리하고, Verify·Restrict·Log 게이트웨이 관점의 방어 방법론을 설계했습니다.}
+
+\entry{2025.06--07}
+  {HSPACE 침투 테스트 교육 콘텐츠}
+  {Content Developer · Knights of the SPACE}
+  {입문자가 단계적으로 공격 흐름을 이해할 수 있도록 가상 쇼핑몰과 난이도별 침투 테스트 시나리오를 구성하고,
+   반복 실행 가능한 실습 환경을 제작했습니다.}
+
+\entry{2025.06--08}
+  {실전 버그바운티 사례 기반 CTF 플랫폼}
+  {Backend Developer · FinderGap}
+  {실제 버그바운티 사례를 재현 가능한 CTF 문제로 전환하는 교육 플랫폼의 백엔드를 구현했습니다.}
+
+\entry{2024}
+  {WordPress 플러그인 취약점 분석 자동화}
+  {고려대학교 인공지능사이버보안학과 학술제}
+  {WordPress 플러그인을 대상으로 한 자동 취약점 탐지 도구를 공동 개발하고 SQL Injection 분석 모듈을 담당했습니다.
+   분석 결과와 구현 내용을 교내 학술제에서 발표했습니다.}
+
+\entry{2024}
+  {AI 기반 악성 URL 분류기}
+  {Frontend · Data Preprocessing · KISIA AI Security Network}
+  {피싱 URL 데이터 정제와 모델 학습 파이프라인 구축에 참여하고,
+   크롬 확장 프로그램 형태의 악성 URL 탐지 서비스 프론트엔드를 개발했습니다.}
+
+% =============================================================================
+% CVE
+% =============================================================================
+\sectiontitle{CVE}{Vulnerability Disclosure}
+
+\entry{2024}
+  {CVE-2024-11950 · XnSoft XnView Classic RWZ 정수 언더플로우}
+  {Independent Vulnerability Research · ZDI-24-1640 · High Severity}
+  {조작된 RWZ 파일 처리 과정의 정수 언더플로우와 메모리 손상을 분석·재현하고 책임 있게 보고했습니다.
+   해당 취약점은 원격 코드 실행 영향으로 ZDI 권고문과 CVE로 공개되었습니다.}
+
+% =============================================================================
+% 기타
+% =============================================================================
+\sectiontitle{기타}{Other}
+
+\entry{2025.03--08}
+  {KITRI 화이트햇 스쿨 3기 조교}
+  {Stage 1 · Midterm · Stage 3}
+  {교육 단계별 실습과 중간발표 운영을 지원하고 학습자 피드백과 진행 관리를 담당했습니다.}
+
+\entry{2024.06--현재}
+  {KnockOn Q\&A 멘토}
+  {Security Community Mentor}
+  {웹 보안과 취약점 분석 학습자의 질문에 답변하고 실습 방향을 안내하고 있습니다.}
+
+\compactentry{2024}
+  {\textbf{정보처리기능사}}
+  {국가기술자격}
+
+\compactentry{}
+  {\textbf{언어} · 한국어(모국어) · 영어(읽기·쓰기) · 중국어(HSK 4급, HSKK 초급)}
+  {Languages}
+
+\cvskills
+
+\end{document}

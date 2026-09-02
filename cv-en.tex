@@ -1,0 +1,164 @@
+% !TEX root = cv-en.tex
+% !TEX program = xelatex
+% English CV content. Edit this file for wording, dates, and entries.
+\def\cvpdftitle{hy30nq | Security Research CV}
+\def\cvfooterlabel{hy30nq · Security Research CV}
+\def\cvupdated{Updated September 2026}
+\input{cv-style.tex}
+
+\begin{document}
+\sffamily
+
+\cvheader{Security Researcher · CTF Builder}
+
+% =============================================================================
+% Affiliations
+% =============================================================================
+\sectiontitle{Affiliations}{Education \& Communities}
+
+\compactentry{2023--Present}
+  {\textbf{Korea University · B.S. in AI Cybersecurity}}
+  {Privacy \& Security Convergence · Integrated B.S.-M.S. Program}
+
+\compactentry{Present}
+  {\textbf{Science \& Technology Specialist Officer Program Candidate}}
+  {Cohort 3}
+
+\compactentry{}
+  {\textbf{SeeCure Lab · KUality · Knights of the SPACE · Rubiyalab}}
+  {Security Research \& CTF Communities}
+
+% =============================================================================
+% Awards: hyperlinks are used only in this section
+% =============================================================================
+\sectiontitle{Awards}{Recognition}
+
+\compactentry{2025}
+  {\href{https://security.korea.ac.kr/m06_04/59}{\textbf{Encouragement Prize} · 2nd Privacy Protection \& Security Policy Idea Contest}}
+  {Korea University School of Cybersecurity}
+
+\compactentry{2024}
+  {\href{https://blog.naver.com/kisiaedu/223785868393}{\textbf{Excellence Award · KISIA Chairman's Award} · AI Security Program Essay Contest}}
+  {Korea Information Security Industry Association}
+
+\compactentry{2024}
+  {\href{https://www.kisia.or.kr/talent_support/education_business/ai_security_technology_development/}{\textbf{Minister of Science and ICT Award · Top Graduate} · KISIA AI Security Program}}
+  {Top overall evaluation across coursework, labs, and project work}
+
+\compactentry{2024}
+  {\href{https://www.boannews.com/media/view.asp?idx=132213\&direct=mobile}{\textbf{Grand Prize (1st) · Minister of Science and ICT Award} · KISIA Security Developer Hackathon}}
+  {Chrome extension for malicious-URL detection}
+
+\compactentry{2024}
+  {\href{https://www.msit.go.kr/bbs/view.do?sCode=user\&mId=113\&mPid=238\&bbsSeqNo=94\&nttSeqNo=3184227}{\textbf{Top 20 · Minister of Science and ICT Certificate} · WhiteHat School Cohort 1}}
+  {Selected among the top 20 of 320 participants}
+
+% =============================================================================
+% CTF finals
+% =============================================================================
+\sectiontitle{CTF Finals}{Competition Results}
+
+\begin{cvlist}
+  \item \textbf{2026 · DEF CON 34 CTF} · Finalist · Team SSS
+  \item \textbf{2025 · WhiteHat Contest} · Finalist · 5th in the qualifier · Team KUality
+  \item \textbf{2025 · Black Hat MEA CTF} · Finalist · 41st in the qualifier · Team PPU-AENG Overflow
+\end{cvlist}
+
+% =============================================================================
+% CTF challenge authoring: add one bullet per event, newest first
+% =============================================================================
+\sectiontitle{CTF Challenge Authoring}{Operations \& Review}
+
+\begin{cvlist}
+  \item \textbf{2026 · KCTF 2026 (KUality)} · Challenge authoring · Liberation Signal 1--3
+  \item \textbf{2026 · CSKWS Joint Seminar CTF} · Event operations and challenge authoring · Ghost Display, Black Cache
+  \item \textbf{2026 · HACKTHEON Sejong Student Cybersecurity Festival} · CTF operations and challenge authoring
+  \item \textbf{Aug 2026 · Information Security Fundamentals Program} · Introductory instruction and Mini CTF operations
+  \item \textbf{Feb 2026 · INC0GNITO FESTIVAL CTF} · Event operations and qualifier/final challenge authoring · Project Incoherence
+  \item \textbf{Feb 2026 · 5th Hanyang Hacking Defense Contest, HCTF with HSPACE} · Challenge authoring
+  \item \textbf{Aug 2025 · SSD CTF} · Challenge authoring
+\end{cvlist}
+
+\newpage
+
+% =============================================================================
+% Projects
+% =============================================================================
+\sectiontitle{Projects}{Security Engineering}
+
+\compactentry{2026--Present}
+  {\textbf{Adversarial Attacks and Incident Traceability for AI Systems}}
+  {Participating Researcher · Ongoing}
+
+\compactentry{2026--Present}
+  {\textbf{Security Analysis of Remote Device-Management Protocols (TR-069) II}}
+  {Participating Researcher · Ongoing}
+
+\compactentry{2026--Present}
+  {\textbf{AI-Based Future-Threat Scenario Prediction from Threat-Actor Campaigns and MITRE D3FEND-Based Countermeasure Enhancement}}
+  {Participating Researcher · Ongoing}
+
+\entry{2026}
+  {Tool/MCP Call Gateway for Securing AI IDEs}
+  {Project Semester · Vulnerability Research}
+  {Analyzed and reproduced unsafe shell-command execution from untrusted project Hook configurations in Cursor IDE without workspace-trust enforcement or sandboxing.
+   Prepared a reproducible PoC and responsible-disclosure materials, then designed a Verify--Restrict--Log gateway methodology for mitigation.}
+
+\entry{Jun--Jul 2025}
+  {HSPACE Penetration-Testing Curriculum}
+  {Content Developer · Knights of the SPACE}
+  {Built a mock e-commerce service and tiered penetration-testing scenarios so beginners could learn complete attack flows in a repeatable lab.}
+
+\entry{Jun--Aug 2025}
+  {CTF Platform Based on Real Bug-Bounty Cases}
+  {Backend Developer · FinderGap}
+  {Implemented the backend of a training platform that converts real bug-bounty cases into reproducible CTF challenges.}
+
+\entry{2024}
+  {Automated WordPress Plugin Vulnerability Analysis}
+  {Korea University AI Cybersecurity Symposium}
+  {Co-developed an automated vulnerability detection tool for WordPress plugins and implemented its SQL injection analysis module.
+   Presented the methodology and implementation at the departmental symposium.}
+
+\entry{2024}
+  {AI-Powered Malicious URL Classifier}
+  {Frontend · Data Preprocessing · KISIA AI Security Network}
+  {Contributed to phishing-URL data cleaning and the model-training pipeline, and developed the frontend for a Chrome extension that detects malicious URLs.}
+
+% =============================================================================
+% CVE
+% =============================================================================
+\sectiontitle{CVE}{Vulnerability Disclosure}
+
+\entry{2024}
+  {CVE-2024-11950 · XnSoft XnView Classic RWZ Integer Underflow}
+  {Independent Vulnerability Research · ZDI-24-1640 · High Severity}
+  {Discovered and responsibly disclosed an integer underflow and resulting memory corruption in XnView Classic's RWZ parser.
+   The issue was published by ZDI and assigned CVE-2024-11950 with remote-code-execution impact.}
+
+% =============================================================================
+% Other
+% =============================================================================
+\sectiontitle{Other}{Additional Experience}
+
+\entry{Mar--Aug 2025}
+  {Teaching Assistant, KITRI WhiteHat School Cohort 3}
+  {Stage 1 · Midterm · Stage 3}
+  {Supported hands-on labs and midterm presentations, providing participant feedback and program coordination.}
+
+\entry{Jun 2024--Present}
+  {KnockOn Q\&A Mentor}
+  {Security Community Mentor}
+  {Guide learners through web-security and vulnerability-analysis questions and hands-on practice.}
+
+\compactentry{2024}
+  {\textbf{Information Processing Craftsman}}
+  {National Technical Qualification}
+
+\compactentry{}
+  {\textbf{Languages} · Korean (native) · English (reading/writing) · Chinese (HSK 4, HSKK Elementary)}
+  {Languages}
+
+\cvskills
+
+\end{document}

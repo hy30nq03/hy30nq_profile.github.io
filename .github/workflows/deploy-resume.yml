@@ -1,0 +1,97 @@
+name: Build and deploy resume
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "*.tex"
+      - "index.html"
+      - "CNAME"
+      - ".github/workflows/deploy-resume.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "*.tex"
+      - "index.html"
+      - "CNAME"
+      - ".github/workflows/deploy-resume.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build LaTeX resume
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Install Korean font
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes fonts-noto-cjk
+          fc-match "Noto Sans CJK KR"
+
+      - name: Install Tectonic
+        uses: wtfjoke/setup-tectonic@v4
+        with:
+          tectonic-version: 0.17.0
+
+      - name: Compile Korean, English, and default resumes
+        run: |
+          mkdir -p dist
+          tectonic -X compile --outdir dist --outfmt pdf --untrusted cv-ko.tex
+          tectonic -X compile --outdir dist --outfmt pdf --untrusted cv-en.tex
+          tectonic -X compile --outdir dist --outfmt pdf --untrusted cv.tex
+
+      - name: Assemble static site
+        run: |
+          cp index.html CNAME dist/
+          touch dist/.nojekyll
+
+      - name: Validate build output
+        run: |
+          test -s dist/index.html
+          test -s dist/cv.pdf
+          test -s dist/cv-ko.pdf
+          test -s dist/cv-en.pdf
+          test -s dist/CNAME
+
+      - name: Configure GitHub Pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    name: Deploy GitHub Pages
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@v4
