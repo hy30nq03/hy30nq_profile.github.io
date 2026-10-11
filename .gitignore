@@ -1,5 +1,8 @@
-# Generated PDFs are produced only by GitHub Actions.
+# Keep published CVs in the branch used by GitHub Pages.
 *.pdf
+!cv.pdf
+!cv-ko.pdf
+!cv-en.pdf
 
 # LaTeX intermediates
 *.aux

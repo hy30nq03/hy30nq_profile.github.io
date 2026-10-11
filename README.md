@@ -8,6 +8,7 @@
 - GitHub: [github.com/hy30nq03](https://github.com/hy30nq03)
 - Blog: [hyeonql.tistory.com](https://hyeonql.tistory.com)
 - Instagram: [@hy30nq](https://www.instagram.com/hy30nq)
+- CV: [한국어](./cv.pdf) · [English](./cv-en.pdf)
 
 ## 주요 소속
 
@@ -18,6 +19,10 @@
 - **[KUality](https://kuality.kr/)**
 - **[Knights of the SPACE](https://hspace.io/)**
 - **[Rubiyalab](https://rubiyalab.team/)**
+
+## 논문
+
+- 이준용·이현규·김누리한(공동 제1저자), 강정민. **「MCP 관리 API의 접근통제 취약점 분석 및 검증연구: Dify MCP 사례」**. 2026 한국정보보호학회 동계학술대회(CISC-W 2026).
 
 ## 수상
 
