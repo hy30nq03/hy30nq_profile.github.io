@@ -166,6 +166,12 @@
 
 ## CVE 및 취약점 연구
 
+### ZDI-CAN-30890 · 공개 예정
+
+- 대상 업체: Anysphere
+- 공동 발견: 김누리한(HanTul), 이현규(hy30nq)
+- [ZDI 공개 예정 목록](https://www.zerodayinitiative.com/advisories/upcoming/) 표기 CVSS: 7.8
+
 ### CVE-2024-11950
 
 - 대상: XnSoft XnView Classic RWZ 파일 파서
