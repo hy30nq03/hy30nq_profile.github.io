@@ -43,6 +43,7 @@
 ## CTF 본선 참가
 
 - **DEF CON 34 CTF** · 본선 진출 · Team SSS · 2026
+- **Black Hat MEA CTF 2026** · 본선 진출
 - **화이트햇콘테스트 2025** · 본선 진출 · 예선 5위 · Team KUality
 - **Black Hat MEA CTF 2025** · 본선 진출 · 예선 41위 · Team PPU-AENG Overflow
 
